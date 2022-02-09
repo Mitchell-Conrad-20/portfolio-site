@@ -1,11 +1,18 @@
 import './App.css';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar.js';
+import Button from './components/Button.js';
 
 function App() {
   return (
     <>
     <Navbar></Navbar>
-    <h1>testing</h1>
+
+    <div className='content'>
+      <h1>testing</h1>
+      <Button>
+        test
+      </Button>
+    </div>
     </>
   );
 }
