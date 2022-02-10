@@ -6,9 +6,9 @@ const Navbar = () =>{
         <div className='container'>
             <ul>
                 <li id='title'>Mitchell Conrad</li>
-                <li>Test1</li>
-                <li>Test2</li>
-                <li id='contact'>Contact</li>
+                <li><Button linkTo='/'>Testing</Button></li>
+                <li><Button linkTo='/'>Test 2</Button></li>
+                <li id='contact'><Button linkTo='/'>Contact</Button></li>
             </ul>
         </div>
     )

@@ -9,7 +9,7 @@ function App() {
 
     <div className='content'>
       <h1>testing</h1>
-      <Button>
+      <Button linkTo={'/'}>
         test
       </Button>
     </div>
