@@ -9,9 +9,7 @@ function App() {
 
     <div className='content'>
       <h1>testing</h1>
-      <Button>
-        test
-      </Button>
+      <Button linkTo='/'>testing</Button>
     </div>
     </>
   );
