@@ -10,4 +10,4 @@ const Button = ( {children, linkTo} ) =>{
     )
 }
 
-export default Button
+export default Button;
