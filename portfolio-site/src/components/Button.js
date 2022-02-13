@@ -1,12 +1,11 @@
 import './Button.css';
 
-const Button = ( {children, linkTo} ) =>{
+const Button = ({ onClick, children }) =>{
     return(
-        <a href={linkTo}>
-            <span className='button'>
-                {children}
+            <><span className='button'>
+                <button onClick={onClick}>{children}</button>
             </span>
-        </a>
+        </>
     )
 }
 
