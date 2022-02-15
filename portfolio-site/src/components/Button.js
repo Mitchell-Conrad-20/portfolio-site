@@ -2,9 +2,10 @@ import './Button.css';
 
 const Button = ({ onClick, children }) =>{
     return(
-            <><span className='button'>
-                <button onClick={onClick}>{children}</button>
-            </span>
+        <>
+            <button onClick={onClick}>
+                <span className='button'>{children}</span>
+            </button>
         </>
     )
 }

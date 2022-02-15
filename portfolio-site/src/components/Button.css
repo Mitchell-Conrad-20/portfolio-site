@@ -1,15 +1,15 @@
-.button{
+button{
     border: 3px solid #ffffff;
     background-color: #5833ff;
     border-radius: 3px;
     padding: 8px 5px 8px 5px;
     transition: 0.5s;
 }
-.button:hover{
+button:hover{
     background-color: #7d60ff;
+    cursor: pointer;
 }
-
-a{
+.button{
     color: white;
-    text-decoration: none;
+    font-family: 'Arvo';
 }
