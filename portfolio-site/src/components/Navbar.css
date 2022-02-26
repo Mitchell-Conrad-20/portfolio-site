@@ -24,3 +24,25 @@ li{
     padding-right: 10%;
     margin-top: 3px;
 }
+
+
+/*Hides the hamburger button when the page is loaded normally*/
+.hamburger{
+    display: none;
+}
+
+/*Responsive stuff*/
+@media screen and (max-width: 600px){
+    .hamburger{
+        display: inline-block;
+        margin-left: 20%;
+    }
+    .nav-item{
+        display:none;
+    }
+}
+@media screen and (max-width: 600px){
+    .nav#open{
+        
+    }
+}
