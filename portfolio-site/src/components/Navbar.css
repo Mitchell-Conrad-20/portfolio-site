@@ -1,4 +1,4 @@
-.container{
+.bar{
     background-color: #5833ff;
 }
 ul{
@@ -11,6 +11,7 @@ ul{
 li{
     display:inline;
     padding:0 0 0 1em;
+    color: white;
 }
 #title{
     padding-left: 10%;
@@ -22,27 +23,40 @@ li{
 #contact{
     float: right;
     padding-right: 10%;
-    margin-top: 3px;
+}
+.mobileNavLinks li{
+    display: list-item;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.mobileNavLinks{
+    width:100vw;
+    height:100vh;
 }
 
+.mobileNavLinks ul{
+    margin-top:40%;
+}
 
-/*Hides the hamburger button when the page is loaded normally*/
-.hamburger{
+/*Hides the hamburger menu when the page is loaded normally*/
+
+.mobileNav{
     display: none;
 }
 
 /*Responsive stuff*/
 @media screen and (max-width: 600px){
-    .hamburger{
-        display: inline-block;
-        margin-left: 20%;
-    }
-    .nav-item{
+    .mainNav{
         display:none;
     }
-}
-@media screen and (max-width: 600px){
-    .nav#open{
-        
+    .mobileNav{
+        display: contents;
+    }
+    .mobileNav ul{
+        display:inline-block;
+    }
+    .hamburger{
+        float: right;
+        margin-right: 5%;
     }
 }
