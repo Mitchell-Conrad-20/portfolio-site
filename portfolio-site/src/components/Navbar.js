@@ -5,14 +5,14 @@ import Modal from './Modal';
 import Hamburger from './Hamburger';
 import { NavLink } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = (props) => {
 
     const modalRef = useRef();
     const [open, setOpen] = useState(false);
     
     return (
         <>
-            <div className='bar'>
+            <div className={ props.scrollNav ? 'bar scrolled' : 'bar'}>
 
 
                 {/* Main Nav for Most Devices */}

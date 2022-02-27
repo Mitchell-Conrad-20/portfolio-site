@@ -26,7 +26,6 @@ function App() {
     <Router>
 
       {/* Navbar (Static Page Content) */}
-      <Navbar scrollNav={scroll}></Navbar>
     
       {/* View (Dynamic Page Content) */}
       <View></View>

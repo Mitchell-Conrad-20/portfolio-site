@@ -1,3 +1,9 @@
+video{
+    height:100%;
+    width:100%;
+    --o-object-fit: cover;
+    object-fit: cover;
+}
 .heroText{
     text-align: center;
     background-color: rgba(0, 0, 0, .5);
@@ -9,7 +15,7 @@
     margin-top: 30vh;
 }
 .heroContainer{
-    background-color: #03045E;
+    /*background-color: #03045E;*/
     height: 93vh;
     width: 100%;
     padding-top: 1px;
