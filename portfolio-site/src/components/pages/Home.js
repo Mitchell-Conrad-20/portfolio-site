@@ -4,6 +4,9 @@ import Modal from '../Modal.js';
 import { useRef } from 'react';
 import Hero from '../Hero';
 import About from '../About.js';
+import Projects from '../Projects.js';
+import Footer from '../Footer.js';
+import Resume from '../Resume.js';
 
 const Home = () => {
     const modalRef = useRef();
@@ -13,6 +16,9 @@ const Home = () => {
 
             <Hero></Hero>
             <About></About>
+            <Projects></Projects>
+            <Resume></Resume>
+            <Footer></Footer>
 
 
             {/*<div className='content'>
