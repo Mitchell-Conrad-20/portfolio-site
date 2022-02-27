@@ -20,8 +20,8 @@ const Navbar = (props) => {
                 <div className='mainNav'>
                     <ul>
                         <NavLink to='/' exact className='nav' style={{ textDecoration: 'none' }}><li id='title'>Mitchell Conrad</li></NavLink>
-                        <li className='nav-item'><Button>  Projects  </Button></li>
-                        <li className='nav-item'><Button>  Resume  </Button></li>
+                        <li className='nav-item'><Button scrollButton={ props.scrollNav }>  Projects  </Button></li>
+                        <li className='nav-item'><Button scrollButton={ props.scrollNav }>  Resume  </Button></li>
                         <li id='contact' className='nav-item'><Button onClick={() => modalRef.current.open()}>  Contact  </Button></li>
                     </ul>
                 </div>
@@ -31,14 +31,14 @@ const Navbar = (props) => {
                 <div className='mobileNav'>
                     <ul>
                         <NavLink to='/' exact className='nav' style={{ textDecoration: 'none' }}><li id='title'>Mitchell Conrad</li></NavLink>
-                        <li className='hamburger'><Hamburger onClick={() => setOpen(!open)}></Hamburger></li>
+                        <li className='hamburger'><Hamburger onClick={() => setOpen(!open)} scrollButton={ props.scrollNav }></Hamburger></li>
                         
                         {open && <>
                         <div className='mobileNavLinks'>
                             <ul>
                                 <li><Button className='mobileNavButton'>  Projects  </Button></li>
                                 <li><Button className='mobileNavButton'>  Resume  </Button></li>
-                                <li><Button onClick={() => modalRef.current.open()} className='mobileNavButton'>  Contact  </Button></li>
+                                <li><Button onClick={() => modalRef.current.open()}>  Contact  </Button></li>
                             </ul>
                         </div>
                         </>}

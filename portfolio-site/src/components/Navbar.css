@@ -41,6 +41,7 @@ li{
 .mobileNavLinks{
     width:100vw;
     height:100vh;
+    background-color:#03045E;
 }
 
 .mobileNavLinks ul{
@@ -67,5 +68,8 @@ li{
     .hamburger{
         float: right;
         margin-right: 5%;
+    }
+    .bar.scrolled{
+        background-color: #03045E;
     }
 }
