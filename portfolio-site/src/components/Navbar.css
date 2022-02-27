@@ -1,5 +1,14 @@
 .bar{
-    background-color: #5833ff;
+    /*background-color: #5833ff;*/
+    background-color: transparent;
+    top:0;
+    position: sticky;
+}
+.bar.scrolled{
+    background-color: #03045E;
+}
+.background{
+    background-image: url('../photos/background.png');
 }
 ul{
     width:100%;
@@ -7,6 +16,7 @@ ul{
     list-style-type: none;
     margin:0 0 0 0;
     padding:1em 0 1em 0;
+
 }
 li{
     display:inline;
@@ -14,15 +24,15 @@ li{
     color: white;
 }
 #title{
-    padding-left: 10%;
-    padding-right: 3em;
+    padding-left: 5%;
+    padding-right: 5%;
     font-variant: small-caps;
     font-weight: bold;
     font-size: 20px;
 }
 #contact{
     float: right;
-    padding-right: 10%;
+    padding-right: 5%;
 }
 .mobileNavLinks li{
     display: list-item;
@@ -30,8 +40,9 @@ li{
     padding-bottom: 10px;
 }
 .mobileNavLinks{
-    width:100vw;
+    width:100%;
     height:100vh;
+    background-color:#03045E;
 }
 
 .mobileNavLinks ul{
@@ -42,6 +53,13 @@ li{
 
 .mobileNav{
     display: none;
+}
+
+.mobileNavUl{
+    background-color: transparent;
+}
+.mobileNavUlOpen{
+    background-color: #03045E;
 }
 
 /*Responsive stuff*/
@@ -58,5 +76,8 @@ li{
     .hamburger{
         float: right;
         margin-right: 5%;
+    }
+    .bar.scrolled{
+        background-color: #03045E;
     }
 }

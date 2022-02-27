@@ -5,23 +5,23 @@ import Modal from './Modal';
 import Hamburger from './Hamburger';
 import { NavLink } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = (props) => {
 
     const modalRef = useRef();
     const [open, setOpen] = useState(false);
-
+    
     return (
         <>
-            <div className='bar'>
+            <div className={ props.scrollNav ? 'bar scrolled' : 'bar'}>
 
 
                 {/* Main Nav for Most Devices */}
-
                 <div className='mainNav'>
                     <ul>
                         <NavLink to='/' exact className='nav' style={{ textDecoration: 'none' }}><li id='title'>Mitchell Conrad</li></NavLink>
-                        <li className='nav-item'><Button>  Projects  </Button></li>
-                        <li className='nav-item'><Button>  Resume  </Button></li>
+                        <li className='nav-item'><Button scrollButton={ props.scrollNav }>  About  </Button></li>
+                        <li className='nav-item'><Button scrollButton={ props.scrollNav }>  Projects  </Button></li>
+                        <li className='nav-item'><Button scrollButton={ props.scrollNav }>  Resume  </Button></li>
                         <li id='contact' className='nav-item'><Button onClick={() => modalRef.current.open()}>  Contact  </Button></li>
                     </ul>
                 </div>
@@ -29,16 +29,17 @@ const Navbar = () => {
 
                 {/* Nav for Mobile Devices */}
                 <div className='mobileNav'>
-                    <ul>
+                    <ul className={open ? 'mobileNavUl mobileNavUlOpen' : 'mobileNavUl'}>
                         <NavLink to='/' exact className='nav' style={{ textDecoration: 'none' }}><li id='title'>Mitchell Conrad</li></NavLink>
-                        <li className='hamburger'><Hamburger onClick={() => setOpen(!open)}></Hamburger></li>
+                        <li className='hamburger'><Hamburger onClick={() => setOpen(!open)} scrollButton={ props.scrollNav }></Hamburger></li>
                         
                         {open && <>
                         <div className='mobileNavLinks'>
                             <ul>
+                                <li><Button className='mobileNavButton'>  About  </Button></li>
                                 <li><Button className='mobileNavButton'>  Projects  </Button></li>
                                 <li><Button className='mobileNavButton'>  Resume  </Button></li>
-                                <li><Button onClick={() => modalRef.current.open()} className='mobileNavButton'>  Contact  </Button></li>
+                                <li><Button onClick={() => modalRef.current.open()}>  Contact  </Button></li>
                             </ul>
                         </div>
                         </>}

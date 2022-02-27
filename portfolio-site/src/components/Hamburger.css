@@ -1,6 +1,6 @@
 button{
     border: 3px solid #ffffff;
-    background-color: #5833ff;
+    /*background-color: #03045E;*/
     border-radius: 3px;
     padding: 8px 5px 8px 5px;
     transition: 0.5s;
@@ -8,4 +8,10 @@ button{
 }
 i{
     margin: 0 4px 0 4px;
+}
+.scrolledHam{
+    background-color: #03045E;
+}
+.nonScrolledHam{
+    background-color: transparent;
 }

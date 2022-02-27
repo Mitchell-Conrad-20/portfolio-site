@@ -1,15 +1,20 @@
 button{
     border: 3px solid #ffffff;
-    background-color: #5833ff;
     border-radius: 3px;
     padding: 8px 5px 8px 5px;
     transition: 0.5s;
 }
+.nonScrolledBtn{
+    background-color: transparent;
+}
 button:hover{
-    background-color: #7d60ff;
+    background-color: #000138;
     cursor: pointer;
 }
 .button{
     color: white;
     font-family: 'Arvo';
+}   
+.scrolledBtn{
+    background-color: #03045E;
 }

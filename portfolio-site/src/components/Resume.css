@@ -1,0 +1,9 @@
+.sectionHeader{
+    text-align: center;
+}
+.resumeContainer{
+    padding-top:1px;
+    height: 100vh;
+    width: 100%;
+    background-color: #EBBAB9;
+}
