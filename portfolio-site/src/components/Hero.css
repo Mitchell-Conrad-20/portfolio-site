@@ -1,0 +1,26 @@
+.heroText{
+    text-align: center;
+    background-color: rgba(0, 0, 0, .5);
+    width:50vw;
+    margin-left:25vw;
+    margin-right:25vw;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    margin-top: 30vh;
+}
+.heroContainer{
+    background-color: #03045E;
+    height: 93vh;
+    width: 100%;
+    padding-top: 1px;
+}
+@media screen and (max-width: 600px){
+    .heroText{
+        width:85vw;
+        margin-left:5vw;
+        margin-right:3vw;
+        padding: 10px 10px 10px 10px;
+        border-radius: 10px;
+        margin-top: 30vh;
+    }
+}

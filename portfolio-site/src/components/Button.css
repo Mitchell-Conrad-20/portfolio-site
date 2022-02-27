@@ -1,15 +1,15 @@
 button{
     border: 3px solid #ffffff;
-    background-color: #5833ff;
+    background-color: #03045E;
     border-radius: 3px;
     padding: 8px 5px 8px 5px;
     transition: 0.5s;
 }
 button:hover{
-    background-color: #7d60ff;
+    background-color: #000138;
     cursor: pointer;
 }
 .button{
     color: white;
     font-family: 'Arvo';
-}
+}   

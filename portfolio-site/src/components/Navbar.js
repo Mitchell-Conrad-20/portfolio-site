@@ -9,7 +9,7 @@ const Navbar = () => {
 
     const modalRef = useRef();
     const [open, setOpen] = useState(false);
-
+    
     return (
         <>
             <div className='bar'>
