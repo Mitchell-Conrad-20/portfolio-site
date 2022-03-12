@@ -33,15 +33,15 @@ const Navbar = (props) => {
                 {/* Nav for Mobile Devices */}
                 <div className='mobileNav'>
                     <ul className={open ? 'mobileNavUl mobileNavUlOpen' : 'mobileNavUl'}>
-                        <NavLink to='/' exact className='nav' style={{ textDecoration: 'none' }}><li id='title'>Mitchell Conrad</li></NavLink>
+                        <li id='title'><Link to='top' smooth={true}><button className='navTitleText'>Mitchell Conrad</button></Link></li>
                         <li className='hamburger'><Hamburger onClick={() => setOpen(!open)} scrollButton={ props.scrollNav }></Hamburger></li>
                         
                         {open && <>
                         <div className='mobileNavLinks'>
                             <ul>
-                                <li><Button className='mobileNavButton'>  About  </Button></li>
-                                <li><Button className='mobileNavButton'>  Projects  </Button></li>
-                                <li><Button className='mobileNavButton'>  Resume  </Button></li>
+                                <li><Link to='about' smooth={true}><Button className='mobileNavButton'>  About  </Button></Link></li>
+                                <li><Link to='projects' smooth={true}><Button className='mobileNavButton'>  Projects  </Button></Link></li>
+                                <li><Link to='resume' smooth={true}><Button className='mobileNavButton'>  Resume  </Button></Link></li>
                                 <li><Button onClick={() => modalRef.current.open()}>  Contact  </Button></li>
                             </ul>
                         </div>
