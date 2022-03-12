@@ -1,7 +1,8 @@
 .footerContainer{
     height:25vh;
     width:100%;
-    padding-top:1px;
+    padding-top:10px;
+    /* background-image: linear-gradient(#FF8360,#DB2955); */
     background-color: #03045E;
     display: flex;
     justify-content: space-between;
@@ -11,10 +12,6 @@
 .footerLeft{
     margin-left: 5%;
     margin-right: 5%
-}
-.footerMiddle{
-    margin-left: 5%;
-    margin-right: 5%;
 }
 .footerRight{
     margin-left: 5%;

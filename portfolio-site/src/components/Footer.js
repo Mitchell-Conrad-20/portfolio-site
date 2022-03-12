@@ -7,9 +7,6 @@ const Footer = () => {
       <div className='footerLeft'>
         <h2>Links</h2>
       </div>
-      <div className='footerMiddle'>
-        <h2>Back to Top</h2>
-      </div>
       <div className='footerRight'>
         <h2>Contact Info</h2>
       </div>

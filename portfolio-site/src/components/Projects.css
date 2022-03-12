@@ -32,7 +32,10 @@
 
 .projectsModalContent{
     color:black;
+    text-align: center;
+    margin-left: -10px;
 }
-.midiVideo{
-    margin-left:-5px;
+.projectsModalContent p{
+    max-width: 300px;
+    line-height: 30px;
 }

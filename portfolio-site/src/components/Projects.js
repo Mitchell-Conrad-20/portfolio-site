@@ -35,12 +35,15 @@ const Projects = () => {
       <Modal ref={modalRef}>
         {project === 'portfolio' &&
           <div className='projectsModalContent'>
-            <h1>Portfolio</h1>
+            <h1>Portfolio Site</h1>
+            <p>This is my portfolio site which I created using React.js and animation libraries. It is full of animations and is completely responsive, so play around with it!</p>
+            <a href='https://github.com/Mitchell-Conrad-20/portfolio-site ' target='_blank'><Button className='lightButton'>Source Code</Button></a>
           </div>
         }
         {project === 'paperTrader' &&
           <div className='projectsModalContent'>
             <h1>PaperTrader</h1>
+            <p>My team and I developed PaperTrader for our Software Engineering class. To do so, we learned React.js for the front-end and are using Firebase for our back-end.</p>
             <a href='https://github.com/mobrien13/paper-trader' target='_blank'><Button className='lightButton'>Source Code</Button></a>
           </div>
         }
@@ -48,12 +51,14 @@ const Projects = () => {
           <div className='projectsModalContent'>
             <h1>MIDI Synth</h1>
             {/* <video className='midiVideo' preload='true' src={video} autoplay muted controls/> */}
-            <iframe className='midiVideo' src={video} loading='eager'/>
+            <span className='midiVideo'><iframe  src={video} loading='eager'/></span>
+            <p>The MIDI Synthesizer was an extracurricular team project for YCP Hacks 2021, a Hackathon at York College. It uses stepper motors to produce different pitches and plays a live MIDI input signal. This project won the Best Hardware Hack.</p>
           </div>
         }
         {project === 'readingLight' &&
           <div className='projectsModalContent'>
             <h1>Automatic Reading Light</h1>
+            <p>My partner and I were tasked with designing a circuit and building a product that would turn on a reading light if the light level was low enough.</p>
           </div>
         }
         {project === 'waterCar' &&

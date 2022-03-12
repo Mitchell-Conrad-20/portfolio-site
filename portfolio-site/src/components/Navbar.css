@@ -6,6 +6,7 @@
     transition: 0.5s;
 }
 .bar.scrolled{
+    /* background-color: #03045E; */
     background-color: #03045E;
 }
 ul{

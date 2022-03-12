@@ -13,7 +13,10 @@
 }
 .itemClickable:hover{
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.70);
+    background-color: #DB2955;
+}
+.itemClickable{
+    background-color: rgba(0, 0, 0, 0.5);
 }
 @media screen and (max-width:800px){
     .item{
