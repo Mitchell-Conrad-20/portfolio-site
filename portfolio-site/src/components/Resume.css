@@ -8,3 +8,7 @@
     /*background-color: #0077B6;*/
     background-image: linear-gradient(#0077b6,#03045E);
 }
+a{
+    text-decoration: none;
+    color:inherit;
+}

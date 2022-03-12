@@ -5,6 +5,7 @@ import Modal from './Modal';
 import Hamburger from './Hamburger';
 import { NavLink } from 'react-router-dom';
 import { Link } from 'react-scroll';
+import Contact from './Contact';
 
 const Navbar = (props) => {
 
@@ -50,7 +51,7 @@ const Navbar = (props) => {
                     </ul>
                 </div>
             </div>
-            <Modal ref={modalRef}><h1 id='modalText'>Contact</h1></Modal>
+            <Modal ref={modalRef}><Contact/></Modal>
         </>
     )
 }

@@ -4,14 +4,15 @@ import './About.css';
 const About = () => {
   return (
     <>
-        <div id='about' className='aboutSection'>
-            <br/>
-            <div className='aboutText'>
-                <h1>About Me</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
+      <div id='about' className='aboutSection'>
+        <br />
+        <div className='aboutText'>
+          <h1>About Me</h1>
+          <p>I am a Sophomore Computer Engineering student at York College of Pennsylvania. Throughout college, I have developed skills in computer programming languages such as Java and C. I have also developed in circuit design, circuit analysis, and digital circuits, through coursework, breadboarding, labs, and projects.</p>
+          <p></p>
+          <p>I am dedicating my time and focus to studying computer engineering at York College. I am excited to learn more about the industry and get started working in a software engineering position this summer at Becton Dickinson. Be sure to check out my projects section to learn more about the projects that I have completed!</p>
         </div>
+      </div>
     </>
   )
 }

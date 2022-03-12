@@ -29,7 +29,7 @@ const View = () => {
         <Navbar scrollNav={scroll}></Navbar>
 
         <Routes>
-          <Route path='*' element={<Home></Home>}></Route>
+          <Route path='/' index element={<Home></Home>}></Route>
         </Routes>
       </div>
     </div>

@@ -4,6 +4,7 @@ import Video from '../videos/video.mp4';
 import Button from './Button';
 import { useState, useRef } from 'react';
 import Modal from './Modal.js';
+import Contact from './Contact';
 
 const Hero = () => {
     const modalRef = useRef();
@@ -22,7 +23,7 @@ const Hero = () => {
             </div>
         </div>
 
-        <Modal ref={modalRef}><h1 id='modalText'>Contact</h1></Modal>
+        <Modal ref={modalRef}><Contact></Contact></Modal>
         </>
     )
 }

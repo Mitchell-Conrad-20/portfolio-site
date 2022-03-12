@@ -3,18 +3,40 @@ button{
     border-radius: 3px;
     padding: 8px 5px 8px 5px;
     transition: 0.5s;
-}
-.nonScrolledBtn{
-    background-color: transparent;
+    font-family: 'Arvo';
 }
 button:hover{
-    background-color: #000138;
     cursor: pointer;
+    font-weight: bold;
 }
-.button{
-    color: white;
-    font-family: 'Arvo';
-}   
+
+.nonScrolledBtn{
+    background-color: transparent;
+    color:white;
+}
+.nonScrolledBtn:hover{
+    background-color: white;
+    color:#03045E;
+}
+
 .scrolledBtn{
+    color: white;
     background-color: #03045E;
+}
+.scrolledBtn:hover{
+    color: #03045E;
+    background-color: white;
+}
+
+.darkButton{
+    background-color: #03045E;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid #03045E;
+    padding:10px;
+}
+.darkButton:hover{
+    background-color: white;
+    color: #03045E;
+    border:2px solid #03045E;
 }

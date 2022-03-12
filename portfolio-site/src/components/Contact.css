@@ -1,0 +1,19 @@
+.contactModalText{
+    margin-top: -20px;
+    color: black;
+    text-align: center;
+}
+.contactModalText ul li{
+    color: black;
+    display: list-item;
+    list-style-type:none;
+    line-height: 30px;
+    margin-left: -25px;
+}
+.contactModalText h1{
+    margin-left: -10px;
+    margin-bottom: -10px;
+}
+.contactModalText Button{
+    margin-left:-10px;
+}
