@@ -4,9 +4,15 @@ import './Footer.css';
 const Footer = () => {
   return (
     <div className='footerContainer'>
-        <div>
-            <h1 className='sectionHeader'>Footer Placeholder</h1>
-        </div>
+      <div className='footerLeft'>
+        <h2>Links</h2>
+      </div>
+      <div className='footerMiddle'>
+        <h2>Back to Top</h2>
+      </div>
+      <div className='footerRight'>
+        <h2>Contact Info</h2>
+      </div>
     </div>
   )
 }

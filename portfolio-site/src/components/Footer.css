@@ -3,4 +3,41 @@
     width:100%;
     padding-top:1px;
     background-color: #03045E;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.footerLeft{
+    margin-left: 5%;
+    margin-right: 5%
+}
+.footerMiddle{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.footerRight{
+    margin-left: 5%;
+    margin-right: 5%
+}
+
+@media screen and (max-width: 650px){
+    .footerContainer{
+        text-align: center;
+        height: fit-content;
+        justify-content: center;
+    }
+    .footerLeft{
+        margin:0;
+        width: 90%;
+    }
+    .footerMiddle{
+        margin:0;
+        width: 90%;
+    }
+    .footerRight{
+        margin:0;
+        margin-right: 0;
+        width: 90%;
+    }
 }

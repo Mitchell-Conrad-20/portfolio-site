@@ -3,12 +3,20 @@
 }
 .resumeContainer{
     padding-top:1px;
-    height: 100vh;
+    min-height: 100vh;
+    height: fit-content;
     width: 100%;
     /*background-color: #0077B6;*/
     background-image: linear-gradient(#0077b6,#03045E);
+    text-align: center;
 }
 a{
     text-decoration: none;
     color:inherit;
+}
+.resumeContentFlexbox{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }

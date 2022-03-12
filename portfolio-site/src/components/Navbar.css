@@ -30,6 +30,7 @@ li{
 #contact{
     float: right;
     padding-right: 5%;
+    margin-top: 3px;
 }
 .mobileNavLinks li{
     display: list-item;

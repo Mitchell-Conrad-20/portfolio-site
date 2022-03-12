@@ -19,10 +19,11 @@ const Projects = () => {
 
 
           <div className='projectsFlexbox'>
-            <span onClick={() => { modalRef.current.open(); setProject('portfolio') }}><Item title='Portfolio Site' description='Personal website to show off development skills using React.js'></Item></span>
-            <span onClick={() => { modalRef.current.open(); setProject('paperTrader') }}><Item title='Paper Trader' description='Stock trading simulator using React.js and Firebase'></Item></span>
-            <span onClick={() => { modalRef.current.open(); setProject('midiSynth') }}><Item title='MIDI Synth' description='A 4 channel synthesizer driven by stepper motors with an audio visualizer. Made using Arduino'></Item></span>
-            <span onClick={() => { modalRef.current.open(); setProject('readingLight') }}><Item title='Automatic Reading Light' description='An efficient LED light source that turns on the light in the room is low'></Item></span>
+            <span onClick={() => { modalRef.current.open(); setProject('portfolio') }}><Item title='Portfolio Site' description='Personal website to show off development skills using React.js' clickable='true'></Item></span>
+            <span onClick={() => { modalRef.current.open(); setProject('paperTrader') }}><Item title='Paper Trader' description='Stock trading simulator using React.js and Firebase' clickable='true'></Item></span>
+            <span onClick={() => { modalRef.current.open(); setProject('midiSynth') }}><Item title='MIDI Synth' description='A 4 channel synthesizer driven by stepper motors with an audio visualizer. Made using Arduino' clickable='true'></Item></span>
+            <span onClick={() => { modalRef.current.open(); setProject('readingLight') }}><Item title='Automatic Reading Light' description='An efficient LED light source that turns on the light in the room is low' clickable='true'></Item></span>
+            <span onClick={() => { modalRef.current.open(); setProject('waterCar') }}><Item title='Water Propelled Car' description='Water stored at a height of 1.0m is used to propell a toy car' clickable='true'></Item></span>
           </div>
         </div>
 
@@ -48,6 +49,11 @@ const Projects = () => {
         {project === 'readingLight' &&
           <div className='projectsModalContent'>
             <h1>Automatic Reading Light</h1>
+          </div>
+        }
+        {project === 'waterCar' &&
+          <div className='projectsModalContent'>
+            <h1>Water Propelled Car</h1>
           </div>
         }
       </Modal>

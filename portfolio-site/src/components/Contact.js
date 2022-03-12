@@ -12,7 +12,7 @@ const Contact = () => {
                     <li>Email: mconrad4@ycp.edu</li>
                     <li>Phone: 484-502-9014</li>
                 </ul>
-                <a href='https://www.linkedin.com/in/mitch-conrad/' target='_blank'><Button className='lightButton'>LinkedIn</Button></a>
+                <a href='https://www.linkedin.com/in/mitch-conrad/' target='_blank' id='buttonNeedsSpace'><Button className='lightButton'>LinkedIn</Button></a>
                 <a href='https://github.com/Mitchell-Conrad-20' target='_blank'><Button className='lightButton'>GitHub</Button></a>
             </div>
         </>

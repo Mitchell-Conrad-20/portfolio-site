@@ -15,5 +15,8 @@
     margin-bottom: -10px;
 }
 .contactModalText Button{
-    margin-left:-10px;
+    margin-left:0px;
+}
+#buttonNeedsSpace{
+    margin-left: 13px;
 }
