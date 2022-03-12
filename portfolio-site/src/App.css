@@ -11,3 +11,13 @@ body{
 #modalText{
     color:black;
 }
+.background{
+    background-image: url('./photos/background.png');
+}
+.background video{
+    height:100vh;
+    max-width: 100vw;
+}
+.mainContent{
+    /* margin-top:-100vh; */
+}

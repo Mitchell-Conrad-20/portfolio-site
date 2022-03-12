@@ -7,9 +7,6 @@
 .bar.scrolled{
     background-color: #03045E;
 }
-.background{
-    background-image: url('../photos/background.png');
-}
 ul{
     width:100%;
     color: white;
@@ -26,8 +23,7 @@ li{
 #title{
     padding-left: 5%;
     padding-right: 5%;
-    font-variant: small-caps;
-    font-weight: bold;
+    
     font-size: 20px;
 }
 #contact{
@@ -47,6 +43,17 @@ li{
 
 .mobileNavLinks ul{
     margin-top:40%;
+}
+.navTitleText{
+    background-color: transparent;
+    border:none;
+    font-size: 20px;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-family: 'Arvo';
+}
+.navTitleText:hover{
+    background-color: transparent;
 }
 
 /*Hides the hamburger menu when the page is loaded normally*/

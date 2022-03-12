@@ -3,10 +3,11 @@ import './Resume.css';
 
 const Resume = () => {
   return (
-    <div className='resumeContainer'>
-        <div>
-            <h1 className='sectionHeader'>Resume</h1>
-        </div>
+    <div id='resume' className='resumeContainer'>
+      <br /><br /><br /><br />
+      <div>
+        <h1 className='sectionHeader'>Resume</h1>
+      </div>
     </div>
   )
 }
