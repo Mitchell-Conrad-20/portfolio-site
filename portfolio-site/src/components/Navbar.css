@@ -3,6 +3,7 @@
     background-color: transparent;
     top:0;
     position: sticky;
+    transition: 0.5s;
 }
 .bar.scrolled{
     background-color: #03045E;

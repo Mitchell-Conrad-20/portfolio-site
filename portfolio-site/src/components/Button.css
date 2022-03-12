@@ -7,7 +7,6 @@ button{
 }
 button:hover{
     cursor: pointer;
-    font-weight: bold;
 }
 
 .nonScrolledBtn{
@@ -34,9 +33,24 @@ button:hover{
     border-radius: 5px;
     border: 2px solid #03045E;
     padding:10px;
+    margin:20px;
 }
 .darkButton:hover{
     background-color: white;
     color: #03045E;
+    border:2px solid #03045E;
+}
+
+.lightButton{
+    background-color: white;
+    color: #03045E;
+    border-radius: 5px;
+    border: 2px solid #03045E;
+    padding:10px;
+    margin:20px;
+}
+.lightButton:hover{
+    background-color: #03045E;
+    color: white;
     border:2px solid #03045E;
 }

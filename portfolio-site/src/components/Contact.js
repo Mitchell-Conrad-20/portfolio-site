@@ -5,14 +5,16 @@ import Button from './Button.js';
 const Contact = () => {
     return (
         <>
-        <div className='contactModalText'>
-            <h1 id="modalText">Contact Info</h1>
-            <ul>
-                <li>Email: mconrad4@ycp.edu</li>
-                <li>Cell Phone: 484-502-9014</li>
-            </ul>
-            <Button className='darkButton'>LinkedIn</Button>
-        </div>
+            <div className='contactModalText'>
+                <h1 id="modalText">Contact Info</h1>
+                <br />
+                <ul>
+                    <li>Email: mconrad4@ycp.edu</li>
+                    <li>Phone: 484-502-9014</li>
+                </ul>
+                <a href='https://www.linkedin.com/in/mitch-conrad/' target='_blank'><Button className='lightButton'>LinkedIn</Button></a>
+                <a href='https://github.com/Mitchell-Conrad-20' target='_blank'><Button className='lightButton'>GitHub</Button></a>
+            </div>
         </>
     )
 }
