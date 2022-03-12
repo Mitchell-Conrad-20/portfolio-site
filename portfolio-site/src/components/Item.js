@@ -6,7 +6,7 @@ const Item = (props) => {
         <>
             <div className={ 
                 !props.clickable ? 'item' : 'item itemClickable' }>
-                <h1>{ props.title }</h1>
+                <h2>{ props.title }</h2>
                 <p>{ props.description }</p>
             </div>
         </>
