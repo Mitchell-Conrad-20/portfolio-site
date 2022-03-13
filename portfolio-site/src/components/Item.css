@@ -1,7 +1,11 @@
 .item{
     align-self: center;
-    /*background-color: #0077b6;*/
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: #0077b6; */
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    /* background-color: #AA8CFD; */
+    /* background-color: #9A031E; */
+    /* background-color: #03045E; */
+    border: 5px solid rgba(0, 0, 0, 0.5);;
     border-radius: 10px;
     width: 30vw;
     /* max-width: 350px; */
@@ -13,10 +17,13 @@
 }
 .itemClickable:hover{
     cursor: pointer;
-    background-color: #DB2955;
+    background-color: #0077b6;
+    /* background-color: #03045E; */
 }
 .itemClickable{
     background-color: rgba(0, 0, 0, 0.5);
+    border: 5px solid white;
+    /* background-color: #03045E; */
 }
 @media screen and (max-width:800px){
     .item{
