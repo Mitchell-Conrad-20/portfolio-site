@@ -33,9 +33,15 @@
 .projectsModalContent{
     color:black;
     text-align: center;
-    margin-left: -10px;
+    max-width: 300px;
 }
 .projectsModalContent p{
     max-width: 300px;
     line-height: 30px;
+}
+
+@media screen and(max-width:600px) {
+    .projectsModalContent iframe{
+        width: 10px;
+    }
 }

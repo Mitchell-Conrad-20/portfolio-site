@@ -22,11 +22,13 @@
     left: 0;
     right: 0;
     padding: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (max-width: 600px){
     .modal-content-wrapper{
-        min-width: 250px;
+        min-width: 200px;
         max-width: 100vw;
         max-height: 80vh;
     }

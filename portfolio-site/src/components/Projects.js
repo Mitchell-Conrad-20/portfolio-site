@@ -51,7 +51,7 @@ const Projects = () => {
           <div className='projectsModalContent'>
             <h1>MIDI Synth</h1>
             {/* <video className='midiVideo' preload='true' src={video} autoplay muted controls/> */}
-            <span className='midiVideo'><iframe  src={video} loading='eager'/></span>
+            <span className='midiVideo'><iframe  src={video} loading='eager' width='265'/></span>
             <p>The MIDI Synthesizer was an extracurricular team project for YCP Hacks 2021, a Hackathon at York College. It uses stepper motors to produce different pitches and plays a live MIDI input signal. This project won the Best Hardware Hack.</p>
           </div>
         }
@@ -64,6 +64,7 @@ const Projects = () => {
         {project === 'waterCar' &&
           <div className='projectsModalContent'>
             <h1>Water Propelled Car</h1>
+            <p>Worked with a partner to create a device that transfers the potential energy of water at 1.0m into kinetic energy. Together, we created the best device in the class</p>
           </div>
         }
       </Modal>
