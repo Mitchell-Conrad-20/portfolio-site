@@ -7,7 +7,8 @@ video{
 .heroText{
     text-align: center;
     background-color: rgba(0, 0, 0, .5);
-    width:50vw;
+    min-width:50vw;
+    width: fit-content;
     margin-left:25vw;
     margin-right:25vw;
     padding: 10px 10px 10px 10px;
@@ -19,7 +20,23 @@ video{
     height: 93vh;
     width: 100%;
     padding-top: 1px;
+    overflow: hidden;
 }
+
+#nameHeader{
+    font-size: xxx-large;
+}
+
+
+
+@media screen and (max-width: 950px){
+    .heroText{
+        width:75vw;
+        margin-left:10vw;
+        margin-right:10vw;
+    }
+}
+
 @media screen and (max-width: 600px){
     .heroText{
         width:85vw;

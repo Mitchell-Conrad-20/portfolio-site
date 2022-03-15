@@ -43,7 +43,7 @@ const Modal = forwardRef((props, ref) => {
                     }}
                     className='modal-content-wrapper'>
     
-                    {/* Concent goes on this div*/}
+                    {/* Content goes on this div*/}
                     <motion.div initial={{
                         x:100,
                         opacity:0

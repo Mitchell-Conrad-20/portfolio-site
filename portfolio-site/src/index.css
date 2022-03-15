@@ -3,6 +3,13 @@ body{
     font-family:'Arvo',serif;
 }
 
+/* Fix z-index issue introduced by react-reveal*/
+.react-reveal{
+  animation-fill-mode: backwards !important;
+}
+
+
+
 /* Custom ScrollBar from W3 Schools */
 
 /* width */

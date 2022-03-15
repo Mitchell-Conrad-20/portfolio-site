@@ -5,6 +5,7 @@ import Button from './Button';
 import { useState, useRef } from 'react';
 import Modal from './Modal.js';
 import Contact from './Contact';
+import { Zoom, Fade, Bounce } from 'react-reveal';
 
 const Hero = () => {
     const modalRef = useRef();
@@ -14,12 +15,14 @@ const Hero = () => {
         <>
         <div className='heroBackground'>
             <div className='heroContainer'>
+                <Zoom top duration={1500}>
                 <div className='heroText'>
-                    <h1>Mitchell Conrad</h1>
+                    <Bounce delay={900}><h1 id='nameHeader'>Mitchell Conrad</h1></Bounce>
                     <p>Computer Engineering Student - Graduating August 2024</p>
                     <Button onClick={() => modalRef.current.open()}>Contact</Button>
                     <br/><br/>
                 </div>
+                </Zoom>
             </div>
         </div>
 
