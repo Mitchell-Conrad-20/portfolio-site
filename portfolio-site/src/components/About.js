@@ -10,15 +10,16 @@ const About = () => {
         <br />
         <div className='aboutBox'>
           <div className='aboutText'>
-            <Fade left><h1>About Me</h1>
+            <Fade left>
+              <h1>About Me</h1>
               <p>I am a Sophomore Computer Engineering student at York College of Pennsylvania. Throughout college, I have developed skills in computer programming languages such as Java and C. I have also developed in circuit design, circuit analysis, and digital circuits, through coursework, breadboarding, labs, and projects.</p>
               <p></p>
               <p>I am dedicating my time and focus to studying computer engineering at York College. I am excited to learn more about the industry and get started working in a software engineering position this summer at Becton Dickinson. Be sure to check out my projects section to learn more about the projects that I have completed!</p>
             </Fade>
           </div>
           <div className='aboutPicture'>
-            {/* <Fade right><img src={headshot} id='headshot' /></Fade> */}
-            <img src={headshot} id='headshot' />
+            <Fade right><img src={headshot} id='headshot' /></Fade>
+            {/* <img src={headshot} id='headshot' /> */}
           </div>
         </div>
       </div>
