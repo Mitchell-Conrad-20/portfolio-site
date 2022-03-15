@@ -18,14 +18,15 @@ const Navbar = (props) => {
 
 
                 {/* Main Nav for Most Devices */}
+                
                 <div className='mainNav'>
                     <ul>
                         {/* <NavLink to='/' exact className='nav' style={{ textDecoration: 'none' }}> */}
-                        <li id='title'><Link to='top' smooth={true}><button className='navTitleText'>Mitchell Conrad</button></Link></li>
+                        <li id='title'><Link to='top' smooth={true} ignoreCancelEvents><button className='navTitleText'>Mitchell Conrad</button></Link></li>
                         {/* </NavLink> */}
-                        <li className='nav-item'><Link to='about' spy={true} smooth={true}><Button scrollButton={ props.scrollNav }>  About  </Button></Link></li>
-                        <li className='nav-item'><Link to="projects" spy={true} smooth={true}><Button scrollButton={ props.scrollNav }>  Projects  </Button></Link></li>
-                        <li className='nav-item'><Link to="resume" spy={true} smooth={true}><Button scrollButton={ props.scrollNav }>  Resume  </Button></Link></li>
+                        <li className='nav-item'><Link to='about' spy={true} smooth={true} ignoreCancelEvents><Button scrollButton={ props.scrollNav }>  About  </Button></Link></li>
+                        <li className='nav-item'><Link to="projects" spy={true} smooth={true} ignoreCancelEvents><Button scrollButton={ props.scrollNav }>  Projects  </Button></Link></li>
+                        <li className='nav-item'><Link to="resume" spy={true} smooth={true} ignoreCancelEvents><Button scrollButton={ props.scrollNav }>  Resume  </Button></Link></li>
                         <li id='contact' className='nav-item'><Button onClick={() => modalRef.current.open()}>  Contact  </Button></li>
                     </ul>
                 </div>
@@ -40,9 +41,9 @@ const Navbar = (props) => {
                         {open && <>
                         <div className='mobileNavLinks'>
                             <ul>
-                                <li><Link to='about' smooth={true}><Button className='mobileNavButton'>  About  </Button></Link></li>
-                                <li><Link to='projects' smooth={true}><Button className='mobileNavButton'>  Projects  </Button></Link></li>
-                                <li><Link to='resume' smooth={true}><Button className='mobileNavButton'>  Resume  </Button></Link></li>
+                                <li><Link to='about' smooth={true} ignoreCancelEvents><Button className='mobileNavButton'>  About  </Button></Link></li>
+                                <li><Link to='projects' smooth={true} ignoreCancelEvents><Button className='mobileNavButton'>  Projects  </Button></Link></li>
+                                <li><Link to='resume' smooth={true} ignoreCancelEvents><Button className='mobileNavButton'>  Resume  </Button></Link></li>
                                 <li><Button onClick={() => modalRef.current.open()}>  Contact  </Button></li>
                             </ul>
                         </div>
