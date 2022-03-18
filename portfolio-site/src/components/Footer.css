@@ -3,7 +3,8 @@
     width:100%;
     padding-top:10px;
     /* background-image: linear-gradient(#FF8360,#DB2955); */
-    background-color: #03045E;
+    background-color: #0039cb;
+    /* background-color: #2962ff; */
     display: flex;
     justify-content: space-between;
     flex-direction: row;

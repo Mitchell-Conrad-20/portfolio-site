@@ -1,8 +1,9 @@
 .aboutBox{
-    background-color: rgba(0, 0, 0, .5);
-    /*background-color: #ffffff;*/
+    /* background-color: rgba(0, 0, 0, .5); */
+    background-color: white;
     /*color:#0077B6;*/
-    color: white;
+    /* color: white; */
+    color: black;
     width: 65vw;
     padding: 10px 30px 10px 30px;
     border-radius: 10px;
@@ -20,7 +21,7 @@
 
 .aboutSection{
     /*background-color: #0077B6;*/
-    background-image: linear-gradient(#03045E, #0077B6);
+    background-image: linear-gradient(#0039cb, #2962ff);
     min-height:100vh;
     width: 100%;
 }
@@ -35,6 +36,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.5);
 }
 .aboutPicture{
     display: block;

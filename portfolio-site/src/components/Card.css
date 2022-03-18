@@ -1,0 +1,27 @@
+.cardContainer{
+    overflow: hidden;
+    width: 300px;
+    background-color: white;
+    border-radius: 5px;
+    color: #1b1b1b;
+    padding-bottom: 10px;
+    padding-top:0px;
+    transition:0.5s;
+    /* border:1px solid black; */
+}
+.cardContainer:hover{
+    box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.5);
+    cursor:pointer;
+}
+.cardImage{
+    width:300px;
+    /* border-radius: 5px; */
+    transform: scale(1);
+    transition-duration: 0.5s;
+}
+.cardImage:hover{
+    transform: scale(1.2);
+}
+.overflow{
+    overflow:hidden;
+}

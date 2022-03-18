@@ -12,9 +12,12 @@
     /* background-color: #AA8CFD; */
     /* background-color: white; */
     /* background-color: #9A031E; */
-    background-color: #0D0F14;
+    background-color: #2962ff;
     text-align: center;
     color: white;
+
+    /* hides scrollbar during animation */
+    overflow: hidden;
 }
 a{
     text-decoration: none;
@@ -25,4 +28,15 @@ a{
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.workExperience{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #e0e0e0;
+    color: black;
+    min-height: 100vh;
+}
+.skillsAndTech{
+    min-height: 100vh;
 }

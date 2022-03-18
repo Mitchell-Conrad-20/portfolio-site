@@ -5,6 +5,9 @@ import { useState, useRef } from 'react';
 import Modal from './Modal.js';
 import Button from './Button.js';
 import video from '../videos/midiSynth.mp4';
+import Card from './Card';
+import epadsImage from '../photos/epadsProj.jpg';
+import { Fade } from 'react-reveal';
 
 const Projects = () => {
   const modalRef = useRef();
@@ -15,18 +18,21 @@ const Projects = () => {
       <div id='projects' className='projectsContainer'>
         <div className='projectsContent'>
           <br /><br /><br /><br />
-          <h1>Project Portfolio</h1>
+          <Fade top delay={500} duration={500}><h1>Project Portfolio</h1></Fade>
 
           {/* On Click of each project compoonent, a modal should popup with more details on the project  */}
-
-
-          <div className='projectsFlexbox'>
+          <div className='cardFlexbox'>
+            <Fade right delay={1000}><Card title='Test Card' image={epadsImage} className='cardItem'>Test Card Text<br />testing testing testing</Card></Fade>
+            <Fade right delay={1500}><Card title='Test Card' image={epadsImage} className='cardItem'>Test Card Text<br />testing testing testing</Card></Fade>
+            <Fade right delay={2000}><Card title='Test Card' image={epadsImage} className='cardItem'>Test Card Text<br />testing testing testing</Card></Fade>
+          </div>
+          {/* <div className='projectsFlexbox'>
             <span onClick={() => { modalRef.current.open(); setProject('portfolio') }}><Item title='Portfolio Site' description='Personal website to show off development skills using React.js' clickable='true'></Item></span>
             <span onClick={() => { modalRef.current.open(); setProject('paperTrader') }}><Item title='Paper Trader' description='Stock brokerage and trading simulator using React.js and Firebase' clickable='true'></Item></span>
             <span onClick={() => { modalRef.current.open(); setProject('midiSynth') }}><Item title='MIDI Synth' description='A 4 channel synthesizer driven by stepper motors with an audio visualizer. Made using Arduino' clickable='true'></Item></span>
             <span onClick={() => { modalRef.current.open(); setProject('readingLight') }}><Item title='Automatic Reading Light' description='An efficient LED light source that turns on the light in the room is low' clickable='true'></Item></span>
             <span onClick={() => { modalRef.current.open(); setProject('waterCar') }}><Item title='Water Propelled Car' description='Water stored at a height of 1.0m is used to propell a toy car' clickable='true'></Item></span>
-          </div>
+          </div> */}
         </div>
 
       </div>

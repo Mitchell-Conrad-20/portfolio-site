@@ -12,7 +12,7 @@ body{
     color:black;
 }
 .background{
-    background-image: url('./photos/background.png');
+    background-image: url('./photos/siteBackground.png');
 }
 .background video{
     height:100vh;

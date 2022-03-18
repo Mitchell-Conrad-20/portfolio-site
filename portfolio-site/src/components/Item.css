@@ -4,14 +4,15 @@
     /* background-color: rgba(0, 0, 0, 0.5); */
     /* background-color: #AA8CFD; */
     /* background-color: #9A031E; */
-    /* background-color: #03045E; */
-    border: 5px solid rgba(0, 0, 0, 0.5);;
+    background-color: #e0e0e0;
+    /* border: 5px solid rgba(0, 0, 0, 0.5); */
+    /* border: 5px solid #aeaeae; */
     border-radius: 10px;
     width: 30vw;
     /* max-width: 350px; */
     padding: 10px 20px 10px 20px;
     margin: 10px 10px 10px 10px;
-    color: white;
+    color: black;
     line-height: 30px;
     transition: 0.5s;
 }
@@ -25,6 +26,11 @@
     border: 5px solid white;
     /* background-color: #03045E; */
 }
+
+.workExpItem{
+    border: 5px solid #aeaeae;
+}
+
 @media screen and (max-width:800px){
     .item{
         width: 80vw;

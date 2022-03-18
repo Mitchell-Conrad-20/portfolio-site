@@ -15,44 +15,44 @@ button:hover{
 }
 .nonScrolledBtn:hover{
     background-color: white;
-    color:#03045E;
+    color:#0039cb;
 }
 
 .scrolledBtn{
     color: white;
-    background-color: #03045E;
+    background-color: #0039cb;
 }
 .scrolledBtn:hover{
-    color: #03045E;
+    color: #0039cb;
     background-color: white;
 }
 
 .darkButton{
-    background-color: #03045E;
+    background-color: #0039cb;
     color: white;
     border-radius: 5px;
-    border: 2px solid #03045E;
+    border: 2px solid #0039cb;
     padding:10px;
     margin:20px;
 }
 .darkButton:hover{
     background-color: white;
-    color: #03045E;
-    border:2px solid #03045E;
+    color: #0039cb;
+    border:2px solid #0039cb;
 }
 
 .lightButton{
     background-color: white;
-    color: #03045E;
+    color: #0039cb;
     border-radius: 5px;
-    border: 2px solid #03045E;
+    border: 2px solid #0039cb;
     padding:10px;
     margin:20px;
 }
 .lightButton:hover{
-    background-color: #03045E;
+    background-color: #0039cb;
     color: white;
-    border:2px solid #03045E;
+    border:2px solid #0039cb;
 }
 .download{
     padding-left: 20px;

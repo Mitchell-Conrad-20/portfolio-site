@@ -40,38 +40,43 @@ const Navbar = (props) => {
                     <ul className={open ? 'mobileNavUl mobileNavUlOpen' : 'mobileNavUl'}>
                         <li id='title'><Link to='top' smooth={true}><button className='navTitleText'>Mitchell Conrad</button></Link></li>
                         <li className='hamburger'><Hamburger onClick={() => setOpen(!open)} scrollButton={props.scrollNav}></Hamburger></li>
-
-                        {open &&
-                            <>
-                                {/* <Fade duration={1500}> */}
-                                {/* TODO: Animate the entire menu not just buttons fading */}
-                                <motion.div className='mobileNavLinks'
-                                    initial={{
-                                        opacity: 0,
-                                        y: -1000
-                                    }}
-                                    animate={{
-                                        opacity: 1,
-                                        y: 0,
-                                        transition: {
-                                            delay: .2,
-                                            duration: .5
-                                        }
-                                    }}
-                                    exit={{
-                                        opacity: 0,
-                                        y: -1000
-                                    }}
-                                >
-                                    <ul>
-                                        <li><Link to='about' smooth={true} ignoreCancelEvents><Button className='mobileNavButton'>  About  </Button></Link></li>
-                                        <li><Link to='projects' smooth={true} ignoreCancelEvents><Button className='mobileNavButton'>  Projects  </Button></Link></li>
-                                        <li><Link to='resume' smooth={true} ignoreCancelEvents><Button className='mobileNavButton'>  Resume  </Button></Link></li>
-                                        <li><Button onClick={() => modalRef.current.open()}>  Contact  </Button></li>
-                                    </ul>
-                                </motion.div>
-                                {/* </Fade> */}
-                            </>}
+                        <AnimatePresence>
+                            {open &&
+                                <>
+                                    {/* <Fade duration={1500}> */}
+                                    {/* TODO: Animate the entire menu not just buttons fading */}
+                                    <motion.div className='mobileNavLinks'
+                                        initial={{
+                                            opacity: 1,
+                                            y: "-100vh"
+                                        }}
+                                        animate={{
+                                            opacity: 1,
+                                            y: 0,
+                                            transition: {
+                                                delay: 0,
+                                                duration: .5
+                                            }
+                                        }}
+                                        exit={{
+                                            opacity: 1,
+                                            y: "-110vh",
+                                            transition: {
+                                                delay: 0,
+                                                duration: .5
+                                            }
+                                        }}
+                                    >
+                                        <ul>
+                                            <li><Link to='about' smooth={true} ignoreCancelEvents><Button className='mobileNavButton'>  About  </Button></Link></li>
+                                            <li><Link to='projects' smooth={true} ignoreCancelEvents><Button className='mobileNavButton'>  Projects  </Button></Link></li>
+                                            <li><Link to='resume' smooth={true} ignoreCancelEvents><Button className='mobileNavButton'>  Resume  </Button></Link></li>
+                                            <li><Button onClick={() => modalRef.current.open()}>  Contact  </Button></li>
+                                        </ul>
+                                    </motion.div>
+                                    {/* </Fade> */}
+                                </>}
+                        </AnimatePresence>
                     </ul>
                 </div>
             </div>
