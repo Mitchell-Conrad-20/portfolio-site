@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 const About = () => {
   return (
     <>
-      <div id='about' className='aboutSection'>
+      <div className='aboutSection'>
         <br />
         <div className='aboutBox'>
           <div className='aboutText'>
