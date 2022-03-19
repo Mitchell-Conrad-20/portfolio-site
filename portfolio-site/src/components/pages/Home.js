@@ -4,12 +4,19 @@ import Modal from '../Modal.js';
 import { useRef } from 'react';
 import Hero from '../Hero';
 import About from '../About.js';
-import Projects from '../Projects.js';
-import Footer from '../Footer.js';
-import Resume from '../Resume.js';
+// import Projects from '../Projects.js';
+// import Footer from '../Footer.js';
+// import Resume from '../Resume.js';
 import Navbar from '../Navbar';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, lazy, Suspense } from 'react';
 import video from '../../videos/videoColorOverlay.mp4';
+
+
+// lazy load
+const Projects = lazy(() => import('../Projects.js'));
+const Footer = lazy(() => import('../Footer.js'));
+const Resume = lazy(() => import('../Resume.js'));
+
 
 const Home = () => {
   const modalRef = useRef();
@@ -35,7 +42,7 @@ const Home = () => {
 
         <div id='top' className='background'>
           <div className='videoOverflow'>
-            <video className='videoBackground' type="video/mp4" src={video} preload='auto'  playsinline loop='true' autoplay='autoplay' muted no-controls />
+            <video className='videoBackground' type="video/mp4" src={video} preload='auto' playsinline loop='true' autoplay='autoplay' muted no-controls />
           </div>
           <div className='overVideo'>
             <Navbar scrollNav={scroll}></Navbar>
@@ -44,9 +51,19 @@ const Home = () => {
         </div>
 
         <About></About>
-        <Projects></Projects>
-        <Resume></Resume>
-        <Footer></Footer>
+
+        <Suspense fallback={
+          <>
+            <div/>
+          </>
+        }>
+
+
+          <Projects></Projects>
+          <Resume></Resume>
+          <Footer></Footer>
+
+        </Suspense>
 
       </div>
 
