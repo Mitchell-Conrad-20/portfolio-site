@@ -1,7 +1,9 @@
 body{
     font-family: 'Arvo';
-    background-color: #0039cb;
+    /* background-color: #0039cb; */
+    background-color: white;
     color: #ffffff;
+    overflow-x: hidden;
 }
 
 .content{
@@ -15,6 +17,7 @@ body{
 .loading{
     text-align: center;
     margin-top: 40vh;
+    color:#0039cb;
 }
 
 
