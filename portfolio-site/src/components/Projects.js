@@ -22,36 +22,48 @@ const Projects = () => {
         <div className='projectsContent'>
           <br /><br /><br /><br />
 
-          <Fade top delay={500} duration={500}><h1>Project Portfolio</h1></Fade>
+          <Fade top delay={500} duration={500}><h1>Physical Projects</h1></Fade>
 
           {/* Project Cards */}
           <div className='cardFlexbox'>
             <Fade right delay={1000}>
               <Card title='Automatic Light' image={ece100proj} className='cardItem' flippedContent={
-                <p>Test</p>
+                <>
+                  <p>My partner and I were tasked with designing a circuit and building a product that would turn on a reading light if the light level was low enough.</p>
+                  <p>The circuit that we designed used the concept of voltage division and a transistor to turn on in low light instead of turning off in low light.</p>
+                  <p>Our device was a huge success! It was far brighter, lasted longer, and cheaper than what was required.</p>
+                </>
               }>
-                Test Card Text<br />testing testing testing
+                <p>ECE100 Team Project - Spring 2021</p>
               </Card>
             </Fade>
             <Fade right delay={1500}>
               <Card title='MIDI Synth' image={ycpHacksProj} className='cardItem' flippedContent={
-                <span className='midiVideo'><iframe src={video} loading='eager' width='265' /></span>
+                <>
+                  <span className='midiVideo'><iframe src={video} loading='eager' width='265' /></span>
+                  <p>A 4 channel synthesizer driven by stepper motors with an audio visualizer. The entire device was made in 36 hours on a team of 4 at YCP Hacks.</p>
+                  <p>It uses stepper motors to produce different pitches and plays a live MIDI input signal. This project won the Best Hardware Hack.</p>
+                </>
               }>
-                <p>The MIDI Synthesizer was an extracurricular team project for YCP Hacks 2021, a Hackathon at York College. It uses stepper motors to produce different pitches and plays a live MIDI input signal. This project won the Best Hardware Hack.</p>
+                <p>YCP Hacks - Fall 2021</p>
+                <p>The MIDI Synthesizer was an extracurricular team project for YCP Hacks 2021, a Hackathon at York College. </p>
               </Card>
             </Fade>
             <Fade right delay={2000}>
               <Card title='Water Propelled Car' image={epadsImage} className='cardItem' flippedContent={
                 <p>Test</p>
               }>
-                Test Card Text<br />testing testing testing
+                <p>EPADS I Team Project - Fall 2020</p>
               </Card>
             </Fade>
           </div>
 
+          <br /><br />
+          <Fade top delay={500} duration={500}><h1>Software Projects</h1></Fade>
+
           {/* Project Blocks */}
           <div className='projectBlocks'>
-            <Fade delay={500} duration={1000}>
+            <Fade delay={1000} duration={1000}>
               <Block className='projectBlock' icon='fa fa-line-chart fa-5x' title='PaperTrader'>
                 <p>Stock brokerage and trading simulator using React.js and Firebase</p>
                 <a href='https://github.com/mobrien13/paper-trader' target='_blank'>
@@ -59,7 +71,7 @@ const Projects = () => {
                 </a>
               </Block>
             </Fade>
-            <Fade delay={500} duration={1000}>
+            <Fade delay={1000} duration={1000}>
               <Block className='projectBlock' icon='fa fa-user-circle-o fa-5x' title='Portfolio Site'>
                 <p>Personal website to show off development skills using React.js</p>
                 <a href='https://github.com/Mitchell-Conrad-20/portfolio-site ' target='_blank'>
@@ -69,6 +81,7 @@ const Projects = () => {
             </Fade>
           </div>
 
+          <br /><br />
 
           {/* On Click of each project compoonent, a modal should popup with more details on the project  */}
           {/* <div className='projectsFlexbox'>
@@ -83,7 +96,7 @@ const Projects = () => {
       </div>
 
 
-      <Modal ref={modalRef}>
+      {/* <Modal ref={modalRef}>
         {project === 'portfolio' &&
           <div className='projectsModalContent'>
             <h1>Portfolio Site</h1>
@@ -101,7 +114,6 @@ const Projects = () => {
         {project === 'midiSynth' &&
           <div className='projectsModalContent'>
             <h1>MIDI Synth</h1>
-            {/* <video className='midiVideo' preload='true' src={video} autoplay muted controls/> */}
             <span className='midiVideo'><iframe src={video} loading='eager' width='265' /></span>
             <p>The MIDI Synthesizer was an extracurricular team project for YCP Hacks 2021, a Hackathon at York College. It uses stepper motors to produce different pitches and plays a live MIDI input signal. This project won the Best Hardware Hack.</p>
           </div>
@@ -118,7 +130,8 @@ const Projects = () => {
             <p>Worked with a partner to create a device that transfers the potential energy of water at 1.0m into kinetic energy. Together, we created the best device in the class</p>
           </div>
         }
-      </Modal>
+      </Modal> */}
+
     </>
   )
 }

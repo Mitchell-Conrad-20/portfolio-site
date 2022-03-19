@@ -4,6 +4,10 @@
 .block{
     max-width: 40vw;
     margin-top: 50px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 600px) {

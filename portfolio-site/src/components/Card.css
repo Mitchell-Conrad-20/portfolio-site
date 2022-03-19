@@ -9,10 +9,10 @@
     transition:0.5s;
     /* border:1px solid black; */
     margin-bottom: 20px;
-    height: 550px;
+    height: 510px;
 }
 .cardContainer:hover{
-    box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.3);
     cursor:pointer;
 }
 .cardImage{
@@ -31,4 +31,14 @@
     line-height: 30px;
     max-width: 90%;
     margin-left:5%
+}
+
+@media screen and (max-width: 600px) {
+    .cardContainer{
+        width: 80vw;
+        height: fit-content;
+    }
+    .cardImage{
+        width:80vw;
+    }
 }

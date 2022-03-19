@@ -5,6 +5,7 @@ import Navbar from './Navbar';
 import { useState, useEffect } from 'react';
 import './Navbar.css';
 import video from '../videos/video.mp4';
+import Resume from './pages/Resume.js';
 
 const View = () => {
   // const [scroll, setScroll] = useState(false);
@@ -29,6 +30,8 @@ const View = () => {
 
         <Routes>
           <Route path='/' index element={<Home></Home>}></Route>
+          <Route path='downloadables/MitchellConradResume.pdf' element={<Resume></Resume>}></Route>
+          <Route path='*' element={<h1>Error: 404</h1>}></Route>
         </Routes>
       </div>
   )

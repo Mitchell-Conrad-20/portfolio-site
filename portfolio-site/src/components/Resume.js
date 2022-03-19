@@ -21,7 +21,7 @@ const Resume = () => {
 
         <br /><br />
         <Fade bottom delay={2000} duration={1000}>
-          <Button className='download'><a href={resume} target="_blank" download="MitchellConradResume.pdf"><h2>Download Full Resume</h2></a></Button>
+          <a href={resume} target="_blank" download="MitchellConradResume.pdf"><Button className='download'><h2>Download Full Resume</h2></Button></a>
         </Fade>
         <br /><br />
       </div>

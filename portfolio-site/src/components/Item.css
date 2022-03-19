@@ -15,6 +15,7 @@
     color: black;
     line-height: 30px;
     transition: 0.5s;
+    box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.3);
 }
 .itemClickable:hover{
     cursor: pointer;
@@ -28,7 +29,8 @@
 }
 
 .workExpItem{
-    border: 5px solid #aeaeae;
+    /* border: 5px solid #aeaeae; */
+    box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width:800px){
