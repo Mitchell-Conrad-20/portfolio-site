@@ -21,9 +21,9 @@ body{
 }
 
 
-/* .background{
-    background-image: url('./photos/siteBackground.png');
-} */
+.background{
+    background-image: url('./photos/siteBackground.webp');
+}
 
 
 /* .background video{

@@ -6,11 +6,11 @@ import Modal from './Modal.js';
 import Button from './Button.js';
 import video from '../videos/midiSynth.mp4';
 import Card from './Card';
-import epadsImage from '../photos/epadsProj.jpg';
+import epadsImage from '../photos/epadsProj.webp';
 import { Fade } from 'react-reveal';
 import Block from './Block.js';
-import ece100proj from '../photos/ece100proj.jpg';
-import ycpHacksProj from '../photos/ycpHacks.jpg';
+import ece100proj from '../photos/ece100proj.webp';
+import ycpHacksProj from '../photos/ycpHacks.webp';
 
 const Projects = () => {
   const modalRef = useRef();
@@ -40,7 +40,7 @@ const Projects = () => {
             <Fade right delay={1500}>
               <Card title='MIDI Synth' image={ycpHacksProj} className='cardItem' flippedContent={
                 <>
-                  <span className='midiVideo'><iframe src={video} loading='eager' width='265' /></span>
+                  <span className='midiVideo'><iframe src={video} loading='lazy' width='265' /></span>
                   <p>A 4 channel synthesizer driven by stepper motors with an audio visualizer. The entire device was made in 36 hours on a team of 4 at YCP Hacks.</p>
                   <p>It uses stepper motors to produce different pitches and plays a live MIDI input signal. This project won the Best Hardware Hack.</p>
                 </>

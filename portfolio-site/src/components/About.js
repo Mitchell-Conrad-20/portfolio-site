@@ -1,6 +1,7 @@
 import React from 'react'
 import './About.css';
-import headshot from '../photos/Headshot2021Fall.jpg';
+import headshot from '../photos/Headshot2021Fall.webp';
+import headshotSmall from '../photos/Headshot2021Fall-small.webp';
 import { Fade } from 'react-reveal';
 import { motion, AnimatePresence } from 'framer-motion';
 
