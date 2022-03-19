@@ -13,7 +13,7 @@ const Footer = () => {
           <ul className='footerUl footerUlLeft'>
             <li><a href='https://www.linkedin.com/in/mitch-conrad/' target='_blank'>LinkedIn</a></li>
             <li><a href='https://github.com/Mitchell-Conrad-20' target='_blank'>GitHub</a></li>
-            <li><a href='../downloadables/MitchellConradResume.pdf' target='_blank'>Resume</a></li>
+            <li><a href='/portfolio-site/downloadables/MitchellConradResume.pdf' target='_blank'>Resume</a></li>
           </ul>
         </div>
 
