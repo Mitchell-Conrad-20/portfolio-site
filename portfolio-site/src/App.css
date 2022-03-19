@@ -1,6 +1,6 @@
 body{
     font-family: 'Arvo';
-    background-color: #0077B6;
+    background-color: #0039cb;
     color: #ffffff;
 }
 
@@ -11,9 +11,16 @@ body{
 #modalText{
     color:black;
 }
-.background{
-    background-image: url('./photos/siteBackground.png');
+
+.loading{
+    text-align: center;
+    margin-top: 40vh;
 }
+
+
+/* .background{
+    background-image: url('./photos/siteBackground.png');
+} */
 
 
 /* .background video{

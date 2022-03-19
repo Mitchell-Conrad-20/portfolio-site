@@ -3,36 +3,35 @@ import Navbar from './components/Navbar.js';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import View from './components/View';
 import { React, useState, useEffect } from 'react';
+import ClipLoader from "react-spinners/ClipLoader";
 
 function App() {
-  
-  const [scroll, setScroll] = useState(false);
+  const [loading, setLoading] = useState(true);
 
-  const changeNav = () => {
-      if(window.scrollY >= 80){
-          setScroll(true);
-      }
-      else{
-          setScroll(false);
-      }
-  }
+  useEffect(() => setLoading(false));
 
-  useEffect(() => {
-    window.addEventListener('scroll',changeNav);
-  }, []);
+
 
   return (
     <>
-    <Router>
+      <Router>
 
-      {/* Navbar (Static Page Content) */}
-    
-      {/* View (Dynamic Page Content) */}
-      <View></View>
+        {/* Loading */}
+        {loading &&
+          <div className='loading'>
+            <ClipLoader color='white'/>
+            <h1>Loading...</h1>
+          </div>
+        }
 
-      {/* Footer (Static Page Content) */}
-    
-    </Router>
+        {/* View (Dynamic Page Content) */}
+        {!loading &&
+          <View></View>
+        }
+
+
+
+      </Router>
     </>
   );
 }
