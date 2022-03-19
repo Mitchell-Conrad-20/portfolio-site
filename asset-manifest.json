@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-site/static/css/main.b77ac945.css",
-    "main.js": "/portfolio-site/static/js/main.6901ac24.js",
+    "main.js": "/portfolio-site/static/js/main.959d0b38.js",
     "static/media/videoColorOverlay.mp4": "/portfolio-site/static/media/videoColorOverlay.26b1cb8b865193d112dd.mp4",
     "static/media/midiSynth.mp4": "/portfolio-site/static/media/midiSynth.ed82568128ddfa812975.mp4",
     "static/media/video.mp4": "/portfolio-site/static/media/video.d48e218167a19525e9ae.mp4",
@@ -13,10 +13,10 @@
     "static/media/MitchellConradResume.pdf": "/portfolio-site/static/media/MitchellConradResume.50d63a9cb4eb55b9e34c.pdf",
     "index.html": "/portfolio-site/index.html",
     "main.b77ac945.css.map": "/portfolio-site/static/css/main.b77ac945.css.map",
-    "main.6901ac24.js.map": "/portfolio-site/static/js/main.6901ac24.js.map"
+    "main.959d0b38.js.map": "/portfolio-site/static/js/main.959d0b38.js.map"
   },
   "entrypoints": [
     "static/css/main.b77ac945.css",
-    "static/js/main.6901ac24.js"
+    "static/js/main.959d0b38.js"
   ]
 }
