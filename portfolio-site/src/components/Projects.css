@@ -57,8 +57,16 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.cardItem{
 
+.projectBlocks{
+    width: 80vw;
+    margin-left: 10vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 @media screen and(max-width:600px) {

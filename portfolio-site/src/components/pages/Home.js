@@ -7,28 +7,48 @@ import About from '../About.js';
 import Projects from '../Projects.js';
 import Footer from '../Footer.js';
 import Resume from '../Resume.js';
+import Navbar from '../Navbar';
+import { useState, useEffect } from 'react';
 
 const Home = () => {
-    const modalRef = useRef();
+  const modalRef = useRef();
 
-    return (
-        <>
+  const [scroll, setScroll] = useState(false);
 
-            <Hero></Hero>
-            <About></About>
-            <Projects></Projects>
-            <Resume></Resume>
-            <Footer></Footer>
+  const changeNav = () => {
+    if (window.scrollY >= 80) {
+      setScroll(true);
+    }
+    else {
+      setScroll(false);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', changeNav);
+  }, []);
+
+  return (
+    <>
+      <div id='top' className='background'>
+        <Navbar scrollNav={scroll}></Navbar>
+        <Hero></Hero>
+      </div>
+
+      <About></About>
+      <Projects></Projects>
+      <Resume></Resume>
+      <Footer></Footer>
 
 
-            {/*<div className='content'>
+      {/*<div className='content'>
                 <h1>testing</h1>
                 <Button onClick={() => modalRef.current.open()}>testing</Button>
             </div>
 
             <Modal ref={modalRef}><h1 id='modalText'>Contact</h1></Modal>*/}
-        </>
-    )
+    </>
+  )
 }
 
 export default Home

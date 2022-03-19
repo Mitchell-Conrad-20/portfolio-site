@@ -27,6 +27,7 @@
 }
 .aboutText p {
     line-height: 30px;
+    text-indent: 3em;
 }
 
 #headshot{
@@ -56,14 +57,14 @@
     .aboutBox{
         margin:0;
         width: 80vw;
-        padding: 10px 30px 10px 30px;
+        padding: 5px 5px 5px 5px;
         border-radius: 10px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
         height: fit-content;
-        margin-left: 5vw;
+        margin-left: 8.5vw;
     }
     #headshot{
         margin:0;
@@ -71,5 +72,8 @@
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 10px;;
+    }
+    .aboutSection{
+        padding-bottom: 20px;
     }
 }

@@ -8,6 +8,9 @@ import video from '../videos/midiSynth.mp4';
 import Card from './Card';
 import epadsImage from '../photos/epadsProj.jpg';
 import { Fade } from 'react-reveal';
+import Block from './Block.js';
+import ece100proj from '../photos/ece100proj.jpg';
+import ycpHacksProj from '../photos/ycpHacks.jpg';
 
 const Projects = () => {
   const modalRef = useRef();
@@ -18,14 +21,56 @@ const Projects = () => {
       <div id='projects' className='projectsContainer'>
         <div className='projectsContent'>
           <br /><br /><br /><br />
+
           <Fade top delay={500} duration={500}><h1>Project Portfolio</h1></Fade>
 
-          {/* On Click of each project compoonent, a modal should popup with more details on the project  */}
+          {/* Project Cards */}
           <div className='cardFlexbox'>
-            <Fade right delay={1000}><Card title='Test Card' image={epadsImage} className='cardItem'>Test Card Text<br />testing testing testing</Card></Fade>
-            <Fade right delay={1500}><Card title='Test Card' image={epadsImage} className='cardItem'>Test Card Text<br />testing testing testing</Card></Fade>
-            <Fade right delay={2000}><Card title='Test Card' image={epadsImage} className='cardItem'>Test Card Text<br />testing testing testing</Card></Fade>
+            <Fade right delay={1000}>
+              <Card title='Automatic Light' image={ece100proj} className='cardItem' flippedContent={
+                <p>Test</p>
+              }>
+                Test Card Text<br />testing testing testing
+              </Card>
+            </Fade>
+            <Fade right delay={1500}>
+              <Card title='MIDI Synth' image={ycpHacksProj} className='cardItem' flippedContent={
+                <span className='midiVideo'><iframe src={video} loading='eager' width='265' /></span>
+              }>
+                <p>The MIDI Synthesizer was an extracurricular team project for YCP Hacks 2021, a Hackathon at York College. It uses stepper motors to produce different pitches and plays a live MIDI input signal. This project won the Best Hardware Hack.</p>
+              </Card>
+            </Fade>
+            <Fade right delay={2000}>
+              <Card title='Water Propelled Car' image={epadsImage} className='cardItem' flippedContent={
+                <p>Test</p>
+              }>
+                Test Card Text<br />testing testing testing
+              </Card>
+            </Fade>
           </div>
+
+          {/* Project Blocks */}
+          <div className='projectBlocks'>
+            <Fade delay={500} duration={1000}>
+              <Block className='projectBlock' icon='fa fa-line-chart fa-5x' title='PaperTrader'>
+                <p>Stock brokerage and trading simulator using React.js and Firebase</p>
+                <a href='https://github.com/mobrien13/paper-trader' target='_blank'>
+                  <Button className='lightButton'>Source Code</Button>
+                </a>
+              </Block>
+            </Fade>
+            <Fade delay={500} duration={1000}>
+              <Block className='projectBlock' icon='fa fa-user-circle-o fa-5x' title='Portfolio Site'>
+                <p>Personal website to show off development skills using React.js</p>
+                <a href='https://github.com/Mitchell-Conrad-20/portfolio-site ' target='_blank'>
+                  <Button className='lightButton'>Source Code</Button>
+                </a>
+              </Block>
+            </Fade>
+          </div>
+
+
+          {/* On Click of each project compoonent, a modal should popup with more details on the project  */}
           {/* <div className='projectsFlexbox'>
             <span onClick={() => { modalRef.current.open(); setProject('portfolio') }}><Item title='Portfolio Site' description='Personal website to show off development skills using React.js' clickable='true'></Item></span>
             <span onClick={() => { modalRef.current.open(); setProject('paperTrader') }}><Item title='Paper Trader' description='Stock brokerage and trading simulator using React.js and Firebase' clickable='true'></Item></span>
@@ -57,7 +102,7 @@ const Projects = () => {
           <div className='projectsModalContent'>
             <h1>MIDI Synth</h1>
             {/* <video className='midiVideo' preload='true' src={video} autoplay muted controls/> */}
-            <span className='midiVideo'><iframe  src={video} loading='eager' width='265'/></span>
+            <span className='midiVideo'><iframe src={video} loading='eager' width='265' /></span>
             <p>The MIDI Synthesizer was an extracurricular team project for YCP Hacks 2021, a Hackathon at York College. It uses stepper motors to produce different pitches and plays a live MIDI input signal. This project won the Best Hardware Hack.</p>
           </div>
         }

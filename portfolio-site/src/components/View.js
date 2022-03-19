@@ -7,32 +7,31 @@ import './Navbar.css';
 import video from '../videos/video.mp4';
 
 const View = () => {
-  const [scroll, setScroll] = useState(false);
+  // const [scroll, setScroll] = useState(false);
 
-  const changeNav = () => {
-    if (window.scrollY >= 80) {
-      setScroll(true);
-    }
-    else {
-      setScroll(false);
-    }
-  }
+  // const changeNav = () => {
+  //   if (window.scrollY >= 80) {
+  //     setScroll(true);
+  //   }
+  //   else {
+  //     setScroll(false);
+  //   }
+  // }
 
-  useEffect(() => {
-    window.addEventListener('scroll', changeNav);
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener('scroll', changeNav);
+  // }, []);
 
   return (
-    <div id='top' className='background'>
-      {/* <video className='videoBackground' type="video/mp4" src={video} preload='auto' loop='true' autoplay='autoplay' muted/> */}
+    // <div id='top' className='background'>
       <div className='mainContent'>
-        <Navbar scrollNav={scroll}></Navbar>
+        {/* <Navbar scrollNav={scroll}></Navbar> */}
 
         <Routes>
           <Route path='/' index element={<Home></Home>}></Route>
         </Routes>
       </div>
-    </div>
+    // </div>
   )
 }
 

@@ -5,6 +5,7 @@
     top: 0;
     left: 0;
     background: rgba(0,0,0,0.6);
+    z-index: 500;
 }
 
 .modal-content-wrapper{
@@ -24,6 +25,7 @@
     padding: 50px;
     display: flex;
     justify-content: center;
+    z-index: 501;
 }
 
 @media screen and (max-width: 600px){

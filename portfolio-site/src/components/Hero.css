@@ -3,6 +3,7 @@ video{
     width:100%;
     --o-object-fit: cover;
     object-fit: cover;
+    z-index: -100;
 }
 .heroText{
     text-align: center;

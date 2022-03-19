@@ -42,24 +42,26 @@ button:hover{
 }
 
 .lightButton{
-    background-color: white;
-    color: #0039cb;
+    background-color: transparent;
+    color: #2962ff;
     border-radius: 5px;
-    border: 2px solid #0039cb;
+    border: 2px solid #2962ff;
     padding:10px;
     margin:20px;
 }
 .lightButton:hover{
-    background-color: #0039cb;
-    color: white;
-    border:2px solid #0039cb;
+    background-color: #2962ff;
+    color: #e0e0e0;
+    border:2px solid #2962ff;
 }
 .download{
     padding-left: 20px;
     padding-right: 20px;
+    border-color: #e0e0e0;
 }
 .download:hover{
     /* color: #0077b6; */
     /* color: #9A031E; */
-    color: #0D0F14;
+    background-color: #e0e0e0;
+    color: #2962ff;
 }
