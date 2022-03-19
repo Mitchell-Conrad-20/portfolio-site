@@ -28,7 +28,7 @@ video{
     background-color: rgba(0, 0, 0, .7);
     min-width:50vw;
     width: fit-content;
-    margin-left:25vw;
+    margin-left:24vw;
     margin-right:25vw;
     padding: 10px 10px 10px 10px;
     border-radius: 10px;
@@ -48,7 +48,7 @@ video{
 
 .heroDownArrow{
     text-align: center;
-    margin-top: -30px;
+    margin-top: -30px;  
 }
 #heroDownArrow{
     color:rgba(0, 0, 0, .7);

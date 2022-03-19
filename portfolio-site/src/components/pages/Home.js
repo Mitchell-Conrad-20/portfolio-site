@@ -31,21 +31,24 @@ const Home = () => {
 
   return (
     <>
-      <div id='top' className='background'>
-        <div className='videoOverflow'>
-          <video className='videoBackground' type="video/mp4" src={video} preload='auto' loop='true' autoplay='autoplay' muted no-controls />
+      <div className='scrollSnapper'>
+
+        <div id='top' className='background'>
+          <div className='videoOverflow'>
+            <video className='videoBackground' type="video/mp4" src={video} preload='auto' loop='true' autoplay='autoplay' muted no-controls />
+          </div>
+          <div className='overVideo'>
+            <Navbar scrollNav={scroll}></Navbar>
+            <Hero></Hero>
+          </div>
         </div>
-        <div className='overVideo'>
-          <Navbar scrollNav={scroll}></Navbar>
-          <Hero></Hero>
-        </div>
+
+        <About></About>
+        <Projects></Projects>
+        <Resume></Resume>
+        <Footer></Footer>
+
       </div>
-
-      <About></About>
-      <Projects></Projects>
-      <Resume></Resume>
-      <Footer></Footer>
-
 
       {/*<div className='content'>
                 <h1>testing</h1>
