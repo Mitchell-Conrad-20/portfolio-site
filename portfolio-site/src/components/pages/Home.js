@@ -35,7 +35,7 @@ const Home = () => {
 
         <div id='top' className='background'>
           <div className='videoOverflow'>
-            <video className='videoBackground' type="video/mp4" src={video} preload='auto' loop='true' autoplay='autoplay' muted no-controls />
+            <video className='videoBackground' type="video/mp4" src={video} preload='auto'  playsinline loop='true' autoplay='autoplay' muted no-controls />
           </div>
           <div className='overVideo'>
             <Navbar scrollNav={scroll}></Navbar>
