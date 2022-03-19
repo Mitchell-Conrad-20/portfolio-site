@@ -19,17 +19,6 @@ body{
     max-width: 100vw;
 } */
 
-.videoOverflow{
-    overflow: hidden;
-    z-index: -100;
-}
-
-.videoBackground{
-    height:100vh;
-    max-width: 100vw;
-    object-fit: cover;
-    overflow: hidden;
-}
-.mainContent{
+/* .mainContent{
     z-index: 0;
-}
+} */

@@ -3,7 +3,25 @@ video{
     width:100%;
     --o-object-fit: cover;
     object-fit: cover;
-    z-index: -100;
+    /* z-index: 0; */
+}
+.overVideo{
+    z-index: 1;
+    position: relative;
+    height: 100vh;
+    background-color: rgba(0, 57, 203,0);
+}
+.videoOverflow{
+    overflow: hidden;
+    z-index: 0;
+}
+
+.videoBackground{
+    height:100vh;
+    max-width: 100vw;
+    object-fit: cover;
+    overflow: hidden;
+    position:absolute;
 }
 .heroText{
     text-align: center;

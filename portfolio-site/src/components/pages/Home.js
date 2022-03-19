@@ -9,6 +9,7 @@ import Footer from '../Footer.js';
 import Resume from '../Resume.js';
 import Navbar from '../Navbar';
 import { useState, useEffect } from 'react';
+import video from '../../videos/videoColorOverlay.mp4';
 
 const Home = () => {
   const modalRef = useRef();
@@ -31,8 +32,13 @@ const Home = () => {
   return (
     <>
       <div id='top' className='background'>
-        <Navbar scrollNav={scroll}></Navbar>
-        <Hero></Hero>
+        <div className='videoOverflow'>
+          <video className='videoBackground' type="video/mp4" src={video} preload='auto' loop='true' autoplay='autoplay' muted no-controls />
+        </div>
+        <div className='overVideo'>
+          <Navbar scrollNav={scroll}></Navbar>
+          <Hero></Hero>
+        </div>
       </div>
 
       <About></About>

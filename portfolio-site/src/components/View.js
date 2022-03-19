@@ -23,7 +23,7 @@ const View = () => {
   // }, []);
 
   return (
-    // <div id='top' className='background'>
+      
       <div className='mainContent'>
         {/* <Navbar scrollNav={scroll}></Navbar> */}
 
@@ -31,7 +31,6 @@ const View = () => {
           <Route path='/' index element={<Home></Home>}></Route>
         </Routes>
       </div>
-    // </div>
   )
 }
 
