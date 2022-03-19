@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/portfolio-site/static/css/main.b77ac945.css",
+    "main.js": "/portfolio-site/static/js/main.6901ac24.js",
+    "static/media/videoColorOverlay.mp4": "/portfolio-site/static/media/videoColorOverlay.26b1cb8b865193d112dd.mp4",
+    "static/media/midiSynth.mp4": "/portfolio-site/static/media/midiSynth.ed82568128ddfa812975.mp4",
+    "static/media/video.mp4": "/portfolio-site/static/media/video.d48e218167a19525e9ae.mp4",
+    "static/media/Headshot2021Fall.jpg": "/portfolio-site/static/media/Headshot2021Fall.316027c26e3661f637f7.jpg",
+    "static/media/ece100proj.jpg": "/portfolio-site/static/media/ece100proj.f70b3ca370eac25933f7.jpg",
+    "static/media/ycpHacks.jpg": "/portfolio-site/static/media/ycpHacks.89f1181b4445d92af35e.jpg",
+    "static/media/siteBackground.png": "/portfolio-site/static/media/siteBackground.91752b603666564c5995.png",
+    "static/media/epadsProj.jpg": "/portfolio-site/static/media/epadsProj.c49b40287a9cd9f34253.jpg",
+    "static/media/MitchellConradResume.pdf": "/portfolio-site/static/media/MitchellConradResume.50d63a9cb4eb55b9e34c.pdf",
+    "index.html": "/portfolio-site/index.html",
+    "main.b77ac945.css.map": "/portfolio-site/static/css/main.b77ac945.css.map",
+    "main.6901ac24.js.map": "/portfolio-site/static/js/main.6901ac24.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b77ac945.css",
+    "static/js/main.6901ac24.js"
+  ]
+}
