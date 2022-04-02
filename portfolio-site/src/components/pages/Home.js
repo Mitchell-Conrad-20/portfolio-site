@@ -11,8 +11,14 @@ import Navbar from '../Navbar';
 import { useState, useEffect } from 'react';
 import video from '../../videos/videoColorOverlay.mp4';
 import thumbnail from '../../photos/thumbnail.webp';
+import Arrow from '../Arrow.js';
+import { Fade } from 'react-reveal';
+import { Link } from 'react-scroll';
+import VisibilitySensor from 'react-visibility-sensor';
 
 const Home = () => {
+  const [aboutVisible, setAboutVisible] = useState(true);
+
   const modalRef = useRef();
 
   const [scroll, setScroll] = useState(false);
@@ -36,7 +42,7 @@ const Home = () => {
 
         <div id='top' className='background'>
           <div className='videoOverflow'>
-            <video className='videoBackground' type="video/mp4" poster={thumbnail} src={video} preload='auto'  playsinline loop='true' autoplay='autoplay' muted no-controls />
+            <video className='videoBackground' type="video/mp4" poster={thumbnail} src={video} preload='auto' playsinline loop='true' autoplay='autoplay' muted no-controls />
           </div>
           <div className='overVideo'>
             <Navbar scrollNav={scroll}></Navbar>
@@ -44,12 +50,17 @@ const Home = () => {
           </div>
         </div>
 
+
+
+
+
         <About></About>
         <Projects></Projects>
         <Resume></Resume>
         <Footer></Footer>
 
       </div>
+
 
       {/*<div className='content'>
                 <h1>testing</h1>

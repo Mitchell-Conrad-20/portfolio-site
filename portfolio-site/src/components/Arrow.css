@@ -1,0 +1,30 @@
+.arrow{
+    background-color: transparent;
+    color: white;
+
+    margin: 10px;
+
+    display: flex;
+    justify-content: center;
+
+    text-shadow: 5px 10px 8px rgba(0, 0, 0, 0.3);
+    
+    cursor: pointer;
+
+    z-index: 5000;
+
+    transition: 0.5s;
+}
+.arrowI{
+    background-color: transparent;
+    transition: 0.5s;
+    border: 5px solid transparent;
+    border-radius: 10px;
+}
+.arrowI:hover{
+    /* color: #2962ff; */
+    color:black;
+    border-color: white;
+    background-color: white;
+    box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.3);
+}

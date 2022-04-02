@@ -10,8 +10,23 @@
     box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.2);
 }
 
+@media screen and (max-width: 1500px) {
+    .block{
+        max-width: 35vw;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .block{
+        max-width: 90vw;
+    }
+}
+
+
 @media screen and (max-width: 600px) {
     .block{
         max-width: 90vw;
     }
 }
+

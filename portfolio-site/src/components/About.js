@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './About.css';
 import headshot from '../photos/Headshot2021Fall.webp';
 import headshotSmall from '../photos/Headshot2021Fall-small.webp';
 import { Fade } from 'react-reveal';
 import { motion, AnimatePresence } from 'framer-motion';
+import Arrow from './Arrow';
+import { Link } from 'react-scroll';
+import VisibilitySensor from 'react-visibility-sensor';
 
 const About = () => {
+  const [isVisible, setIsVisible] = useState(true);
+
   return (
     <>
       <div className='aboutSection'>
@@ -14,38 +19,52 @@ const About = () => {
           <div className='aboutText'>
             <Fade left>
               <h1>About Me</h1>
-              <p>I am a Sophomore Computer Engineering student at York College of Pennsylvania. Throughout college, I have developed skills in computer programming languages such as Java and C. I have also developed in circuit design, circuit analysis, and digital circuits, through coursework, breadboarding, labs, and projects.</p>
+              <VisibilitySensor offset={{top:100}} scrollCheck={true} onChange={() => setIsVisible(!isVisible)}>
+                <p>I am a Sophomore Computer Engineering student at York College of Pennsylvania. Throughout college, I have developed skills in computer programming languages such as Java and C. I have also developed in circuit design, circuit analysis, and digital circuits, through coursework, breadboarding, labs, and projects.</p>
+              </VisibilitySensor>
               <p></p>
               <p>I am excited to learn more about the industry and get started working in a software engineering position this summer at Becton Dickinson. Be sure to check out my projects section to learn more about the projects that I have completed!</p>
             </Fade>
           </div>
-          {/* <div className='aboutPicture'> */}
-          {/* <Fade right><img src={headshot} id='headshot' /></Fade> */}
-          {/* <img src={headshot} id='headshot' /> */}
-          <AnimatePresence>
+          <div className='aboutPicture'>
+            <Fade right><img src={headshotSmall} id='headshot' /></Fade>
+          </div>
+        </div>
+
+
+
+        {/* Arrow Buttons */}
+        <AnimatePresence>
+
+          {isVisible &&
             <motion.div
               initial={{
-                opacity: 0,
-                x: 0
+                opacity: 0
               }}
               animate={{
                 opacity: 1,
                 transition: {
-                  delay: .2,
-                  duration: 0.4
-                },
-                x: 0
+                  duration: 0.5
+                }
               }}
               exit={{
                 opacity: 0,
-                x: 0
+                transition: {
+                  duration: 0.5
+                }
               }}
-              className='aboutPicture'>
-              <img src={headshot} id='headshot' />
+            >
+
+              <div className='arrows'>
+                <Link to='top' spy={true} smooth={true}><Arrow type='fa fa-arrow-circle-up fa-2x' /></Link>
+                <Link to='projects' spy={true} smooth={true}><Arrow type='fa fa-arrow-circle-down fa-2x' /></Link>
+              </div>
+
             </motion.div>
-          </AnimatePresence>
-          {/* </div> */}
-        </div>
+          }
+
+        </AnimatePresence>
+
       </div>
     </>
   )

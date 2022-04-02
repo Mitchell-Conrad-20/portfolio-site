@@ -15,8 +15,8 @@ const Resume = () => {
         <div className='resumeContentFlexbox'>
           <Fade right delay={500} duration={1000}><Item title='Java and OOP' description='Learned Object Orient Programming in Java during CS201 and earned a 99% in the course'></Item></Fade>
           <Fade right delay={1000} duration={1000}><Item title='C/C++' description='Learned C in CS101 through projects and labs. Applied knowledge of C/C++ in other courses and personal projects'></Item></Fade>
-          <Fade right delay={1500} duration={1000}><Item title='React.js' description='Experienced using React.js functional components and hooks for elegant and responsive web pages'></Item></Fade>
-          <Fade right delay={2000} duration={1000}><Item title='HTML/CSS' description='Developed experience with HTML and CSS through 12 years of learning and practice on personal projects'></Item></Fade>
+          <Fade right delay={500} duration={1000}><Item title='React.js' description='Experienced using React.js functional components and hooks for elegant and responsive web pages'></Item></Fade>
+          <Fade right delay={1000} duration={1000}><Item title='HTML/CSS' description='Developed experience with HTML and CSS through 12 years of learning and practice on personal projects'></Item></Fade>
         </div>
 
         <br /><br />
@@ -31,8 +31,8 @@ const Resume = () => {
         <div className='resumeContentFlexbox'>
           <Fade right delay={500} duration={1000}><Item title='Software Engineering Co-op' description='Becton Dickinson - Starting May 2022' className='workExpItem'></Item></Fade>
           <Fade right delay={1000} duration={1000}><Item title='Computer Science Tutor' description='York College of Pennsylvania' className='workExpItem'></Item></Fade>
-          <Fade right delay={1500} duration={1000}><Item title='Head Lifeguard' description='YMCA of the Greater Brandywine Valley' className='workExpItem'></Item></Fade>
-          <Fade right delay={2000} duration={1000}><Item title='Counselor in Training' description='Camp Horseshoe, Horseshoe Scout Reservation' className='workExpItem'></Item></Fade>
+          <Fade right delay={500} duration={1000}><Item title='Head Lifeguard' description='YMCA of the Greater Brandywine Valley' className='workExpItem'></Item></Fade>
+          <Fade right delay={1000} duration={1000}><Item title='Counselor in Training' description='Camp Horseshoe, Horseshoe Scout Reservation' className='workExpItem'></Item></Fade>
         </div>
         <br /><br /><br /><br />
       </div>

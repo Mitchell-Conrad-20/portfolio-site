@@ -25,6 +25,14 @@ body{
     background-image: url('./photos/thumbnail.webp');
 }
 
+/* On Screen Arrows: */
+.arrows{
+    position: fixed;
+    top: 80vh; 
+    right: 3vw; 
+    z-index: 5001;
+}
+
 
 /* .background video{
     height:100vh;

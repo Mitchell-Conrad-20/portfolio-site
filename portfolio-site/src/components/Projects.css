@@ -69,6 +69,17 @@
     margin-top: 40px;
 }
 
+.softwareProjects{
+    width: 80vw;
+    margin-left: 10vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
 @media screen and(max-width:600px) {
     .projectsModalContent iframe{
         width: 10px;

@@ -9,7 +9,7 @@
     transition:0.5s;
     /* border:1px solid black; */
     margin-bottom: 20px;
-    height: 510px;
+    height: 525px;
 }
 .cardContainer:hover{
     box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.3);
