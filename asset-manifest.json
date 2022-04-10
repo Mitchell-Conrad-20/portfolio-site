@@ -1,10 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.6ab18238.css",
-    "main.js": "/static/js/main.61c91778.js",
-    "static/media/videoColorOverlay.mp4": "/static/media/videoColorOverlay.26b1cb8b865193d112dd.mp4",
+    "main.css": "/static/css/main.5f1a4fd3.css",
+    "main.js": "/static/js/main.146b6b50.js",
+    "static/media/videoCompressed.mp4": "/static/media/videoCompressed.79e401e6988defcfb476.mp4",
     "static/media/midiSynth.mp4": "/static/media/midiSynth.ed82568128ddfa812975.mp4",
-    "static/media/video.mp4": "/static/media/video.d48e218167a19525e9ae.mp4",
     "static/media/Headshot2021Fall.webp": "/static/media/Headshot2021Fall.9569317b04193c981a81.webp",
     "static/media/epadsProj.webp": "/static/media/epadsProj.4e05dfc0146f3a94b65e.webp",
     "static/media/ece100proj.webp": "/static/media/ece100proj.61f94f5aa4cb8440698a.webp",
@@ -13,11 +12,11 @@
     "static/media/MitchellConradResume.pdf": "/static/media/MitchellConradResume.50d63a9cb4eb55b9e34c.pdf",
     "static/media/Headshot2021Fall-small.webp": "/static/media/Headshot2021Fall-small.5c818344ddd8f1835c7b.webp",
     "index.html": "/index.html",
-    "main.6ab18238.css.map": "/static/css/main.6ab18238.css.map",
-    "main.61c91778.js.map": "/static/js/main.61c91778.js.map"
+    "main.5f1a4fd3.css.map": "/static/css/main.5f1a4fd3.css.map",
+    "main.146b6b50.js.map": "/static/js/main.146b6b50.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ab18238.css",
-    "static/js/main.61c91778.js"
+    "static/css/main.5f1a4fd3.css",
+    "static/js/main.146b6b50.js"
   ]
 }
