@@ -1,8 +1,6 @@
 import React from 'react';
 import './Projects.css';
-import Item from './Item.js';
-import { useState, useRef } from 'react';
-import Modal from './Modal.js';
+import { useState } from 'react';
 import Button from './Button.js';
 import video from '../videos/midiSynth.mp4';
 import Card from './Card';
@@ -18,9 +16,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const Projects = () => {
   const [isVisible, setIsVisible] = useState(true);
-
-  const modalRef = useRef();
-  const [project, setProject] = useState('');
 
   return (
     <>
@@ -94,14 +89,6 @@ const Projects = () => {
 
               <br /><br />
 
-              {/* On Click of each project compoonent, a modal should popup with more details on the project  */}
-              {/* <div className='projectsFlexbox'>
-            <span onClick={() => { modalRef.current.open(); setProject('portfolio') }}><Item title='Portfolio Site' description='Personal website to show off development skills using React.js' clickable='true'></Item></span>
-            <span onClick={() => { modalRef.current.open(); setProject('paperTrader') }}><Item title='Paper Trader' description='Stock brokerage and trading simulator using React.js and Firebase' clickable='true'></Item></span>
-            <span onClick={() => { modalRef.current.open(); setProject('midiSynth') }}><Item title='MIDI Synth' description='A 4 channel synthesizer driven by stepper motors with an audio visualizer. Made using Arduino' clickable='true'></Item></span>
-            <span onClick={() => { modalRef.current.open(); setProject('readingLight') }}><Item title='Automatic Reading Light' description='An efficient LED light source that turns on the light in the room is low' clickable='true'></Item></span>
-            <span onClick={() => { modalRef.current.open(); setProject('waterCar') }}><Item title='Water Propelled Car' description='Water stored at a height of 1.0m is used to propell a toy car' clickable='true'></Item></span>
-          </div> */}
             </div>
 
           </div>
@@ -139,48 +126,7 @@ const Projects = () => {
         }
 
       </AnimatePresence>
-
-
-
-
-
-
-      {/* <Modal ref={modalRef}>
-        {project === 'portfolio' &&
-          <div className='projectsModalContent'>
-            <h1>Portfolio Site</h1>
-            <p>This is my portfolio site which I created using React.js and animation libraries. It is full of animations and is completely responsive, so play around with it!</p>
-            <a href='https://github.com/Mitchell-Conrad-20/portfolio-site ' target='_blank'><Button className='lightButton'>Source Code</Button></a>
-          </div>
-        }
-        {project === 'paperTrader' &&
-          <div className='projectsModalContent'>
-            <h1>PaperTrader</h1>
-            <p>My team and I developed PaperTrader for our Software Engineering class. To do so, we learned React.js for the front-end and are using Firebase for our back-end.</p>
-            <a href='https://github.com/mobrien13/paper-trader' target='_blank'><Button className='lightButton'>Source Code</Button></a>
-          </div>
-        }
-        {project === 'midiSynth' &&
-          <div className='projectsModalContent'>
-            <h1>MIDI Synth</h1>
-            <span className='midiVideo'><iframe src={video} loading='eager' width='265' /></span>
-            <p>The MIDI Synthesizer was an extracurricular team project for YCP Hacks 2021, a Hackathon at York College. It uses stepper motors to produce different pitches and plays a live MIDI input signal. This project won the Best Hardware Hack.</p>
-          </div>
-        }
-        {project === 'readingLight' &&
-          <div className='projectsModalContent'>
-            <h1>Automatic Reading Light</h1>
-            <p>My partner and I were tasked with designing a circuit and building a product that would turn on a reading light if the light level was low enough.</p>
-          </div>
-        }
-        {project === 'waterCar' &&
-          <div className='projectsModalContent'>
-            <h1>Water Propelled Car</h1>
-            <p>Worked with a partner to create a device that transfers the potential energy of water at 1.0m into kinetic energy. Together, we created the best device in the class</p>
-          </div>
-        }
-      </Modal> */}
-
+      
     </>
   )
 }

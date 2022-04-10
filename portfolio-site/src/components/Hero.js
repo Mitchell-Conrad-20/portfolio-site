@@ -1,15 +1,14 @@
 import React from 'react'
 import './Hero.css';
 import Button from './Button';
-import { useState, useRef } from 'react';
+import { useRef } from 'react';
 import Modal from './Modal.js';
 import Contact from './Contact';
-import { Zoom, Fade, Bounce } from 'react-reveal';
+import { Zoom, Bounce } from 'react-reveal';
 import { Link } from 'react-scroll';
 
 const Hero = () => {
     const modalRef = useRef();
-    const [open, setOpen] = useState(false);
 
     return (
         <>

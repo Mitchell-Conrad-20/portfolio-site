@@ -1,10 +1,9 @@
 import React from 'react';
 import './Resume.css';
 import Button from '../components/Button.js';
-import { Link } from 'react-router-dom';
 import resume from '../downloadables/MitchellConradResume.pdf';
 import Item from './Item';
-import { Fade, Bounce } from 'react-reveal';
+import { Fade } from 'react-reveal';
 
 const Resume = () => {
   return (

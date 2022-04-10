@@ -3,7 +3,6 @@ import Button from './Button.js';
 import { useRef, useState } from 'react';
 import Modal from './Modal';
 import Hamburger from './Hamburger';
-import { NavLink } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import Contact from './Contact';
 import { Fade } from 'react-reveal';
