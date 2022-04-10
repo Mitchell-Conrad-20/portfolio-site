@@ -36,12 +36,12 @@ li{
 #contact{
     float: right;
     padding-right: 5%;
-    margin-top: 3px;
+    margin-top: 5px;
 }
 .mobileNavLinks li{
     display: list-item;
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 .mobileNavLinks{
     width:100%;
@@ -51,7 +51,7 @@ li{
 }
 
 .mobileNavLinks ul{
-    margin-top:40%;
+    margin-top:15vh;
 }
 .navTitleText{
     background-color: transparent;
@@ -97,5 +97,12 @@ li{
     }
     .bar.scrolled{
         background-color: #0039cb;
+    }
+}
+
+/* Hide Contact Button Less Than Half Screen */
+@media screen and (max-width: 715px) {
+    #contact{
+        display:none;
     }
 }

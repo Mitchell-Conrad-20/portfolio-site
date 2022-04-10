@@ -4,7 +4,6 @@ import { Routes, Route } from 'react-router-dom';
 import Navbar from './Navbar';
 import { useState, useEffect } from 'react';
 import './Navbar.css';
-import video from '../videos/video.mp4';
 import Resume from './pages/Resume.js';
 
 const View = () => {

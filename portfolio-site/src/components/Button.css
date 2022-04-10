@@ -65,3 +65,10 @@ button:hover{
     background-color: white;
     color: #2962ff;
 }
+
+.mobileNavButton{
+    width: 65vw;
+    margin: 0;
+    padding: 15px;
+    font-size: large;
+}

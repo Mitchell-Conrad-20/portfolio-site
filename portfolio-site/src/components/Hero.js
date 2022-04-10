@@ -1,6 +1,5 @@
 import React from 'react'
 import './Hero.css';
-import Video from '../videos/video.mp4';
 import Button from './Button';
 import { useState, useRef } from 'react';
 import Modal from './Modal.js';
@@ -16,7 +15,7 @@ const Hero = () => {
         <>
             <div className='heroBackground'>
                 <div className='heroContainer'>
-                    <Zoom top duration={1500}>
+                    <Zoom top duration={1000} delay={1300}>
                         <div className='heroText'>
                             <Bounce delay={900}><h1 id='nameHeader'>Mitchell Conrad</h1></Bounce>
                             <p>Computer Engineering Student - Graduating August 2024</p>
@@ -33,7 +32,7 @@ const Hero = () => {
 
 
                 <div className='heroDownArrow'>
-                    <Link to='about' smooth={true} ignoreCancelEvents>
+                    <Link to='about' smooth={true} ignoreCancelEvents duration={500}>
                         <i id='heroDownArrow' class="fa fa-angle-double-down fa-5x" aria-hidden="true"></i>
                     </Link>
                 </div>

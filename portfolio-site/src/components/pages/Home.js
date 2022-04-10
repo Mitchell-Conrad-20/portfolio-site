@@ -9,7 +9,7 @@ import Footer from '../Footer.js';
 import Resume from '../Resume.js';
 import Navbar from '../Navbar';
 import { useState, useEffect } from 'react';
-import video from '../../videos/videoColorOverlay.mp4';
+import video from '../../videos/videoCompressed.mp4';
 import thumbnail from '../../photos/thumbnail.webp';
 import Arrow from '../Arrow.js';
 import { Fade } from 'react-reveal';

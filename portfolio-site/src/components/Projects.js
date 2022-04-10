@@ -30,11 +30,11 @@ const Projects = () => {
             <div className='projectsContent'>
               <br /><br /><br /><br />
 
-              <Fade top delay={500} duration={500}><h1>Physical Projects</h1></Fade>
+              <Fade top delay={1000} duration={500}><h1>Physical Projects</h1></Fade>
 
               {/* Project Cards */}
               <div className='cardFlexbox'>
-                <Fade right delay={1000}>
+                <Fade right delay={1500} duration={800}>
                   <Card title='Automatic Light' image={ece100proj} className='cardItem' flippedContent={
                     <>
                       <p>My partner and I were tasked with designing a circuit and building a product that would turn on a reading light if the light level was low enough.</p>
@@ -45,7 +45,7 @@ const Projects = () => {
                     <p>ECE100 Team Project - Spring 2021</p>
                   </Card>
                 </Fade>
-                <Fade right delay={1500}>
+                <Fade right delay={1600} duration={800}>
                   <Card title='MIDI Synth' image={ycpHacksProj} className='cardItem' flippedContent={
                     <>
                       <span className='midiVideo'><iframe src={video} loading='lazy' width='265' /></span>
@@ -57,7 +57,7 @@ const Projects = () => {
                     <p>The MIDI Synthesizer was an extracurricular team project for YCP Hacks 2021, a Hackathon at York College. </p>
                   </Card>
                 </Fade>
-                <Fade right delay={2000}>
+                <Fade delay={1700} duration={800}>
                   <Card title='Water Propelled Car' image={epadsImage} className='cardItem' flippedContent={
                     <p>Water stored at a height of 1.0m is used to propel a toy car. My partner and I designed, prototyped, tested, built, and presented our device.
                       <br/>The project was also a competition between teams, and our grades were based partially upon the distance which our car traveled compared to that of the other teams.

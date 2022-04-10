@@ -20,15 +20,16 @@ const Navbar = (props) => {
 
 
                 {/* Main Nav for Most Devices */}
-                <Fade top duration={1500}>
+                <Fade top duration={500} delay={1000}>
                     <div className='mainNav'>
                         <ul>
                             {/* <NavLink to='/' exact className='nav' style={{ textDecoration: 'none' }}> */}
                             <li id='title'><Link to='top' smooth={true} ignoreCancelEvents><button className='navTitleText'>Mitchell Conrad</button></Link></li>
                             {/* </NavLink> */}
-                            <li className='nav-item'><Link to='about' spy={true} smooth={true} ignoreCancelEvents><Button scrollButton={props.scrollNav}>  About  </Button></Link></li>
-                            <li className='nav-item'><Link to="projects" spy={true} smooth={true} ignoreCancelEvents><Button scrollButton={props.scrollNav}>  Projects  </Button></Link></li>
-                            <li className='nav-item'><Link to="resume" spy={true} smooth={true} ignoreCancelEvents><Button scrollButton={props.scrollNav}>  Resume  </Button></Link></li>
+                            <li className='nav-item'><Link to='about' spy={true} smooth={true} ignoreCancelEvents isDynamic duration={500}><Button scrollButton={props.scrollNav}>  About  </Button></Link></li>
+                            <li className='nav-item'><Link to="projects" spy={true} smooth={true} ignoreCancelEvents isDynamic duration={500}><Button scrollButton={props.scrollNav}>  Projects  </Button></Link></li>
+                            <li className='nav-item'><Link to="resume" spy={true} smooth={true} ignoreCancelEvents isDynamic duration={500}><Button scrollButton={props.scrollNav}>  Resume  </Button></Link></li>
+                            <li className='nav-item'><Link to="experience" spy={true} smooth={true} ignoreCancelEvents isDynamic duration={500}><Button scrollButton={props.scrollNav}>  Experience  </Button></Link></li>
                             <li id='contact' className='nav-item'><Button onClick={() => modalRef.current.open()}>  Contact  </Button></li>
                         </ul>
                     </div>
@@ -68,10 +69,11 @@ const Navbar = (props) => {
                                         }}
                                     >
                                         <ul>
-                                            <li><Link to='about' smooth={true} ignoreCancelEvents><Button className='mobileNavButton'>  About  </Button></Link></li>
-                                            <li><Link to='projects' smooth={true} ignoreCancelEvents><Button className='mobileNavButton'>  Projects  </Button></Link></li>
-                                            <li><Link to='resume' smooth={true} ignoreCancelEvents><Button className='mobileNavButton'>  Resume  </Button></Link></li>
-                                            <li><Button onClick={() => modalRef.current.open()}>  Contact  </Button></li>
+                                            <li><Link to='about' smooth={true} ignoreCancelEvents><Button className='mobileNavButton' onClick={() => setOpen(false)}>  About  </Button></Link></li>
+                                            <li><Link to='projects' smooth={true} ignoreCancelEvents><Button className='mobileNavButton' onClick={() => setOpen(false)}>  Projects  </Button></Link></li>
+                                            <li><Link to='resume' smooth={true} ignoreCancelEvents><Button className='mobileNavButton' onClick={() => setOpen(false)}>  Resume  </Button></Link></li>
+                                            <li><Link to='experience' smooth={true} ignoreCancelEvents><Button className='mobileNavButton' onClick={() => setOpen(false)}>  Experience  </Button></Link></li>
+                                            <li><Button className='mobileNavButton' onClick={() => modalRef.current.open()}>  Contact  </Button></li>
                                         </ul>
                                     </motion.div>
                                     {/* </Fade> */}

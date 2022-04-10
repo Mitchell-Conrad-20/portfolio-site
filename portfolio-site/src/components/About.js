@@ -17,17 +17,17 @@ const About = () => {
         <br />
         <div className='aboutBox'>
           <div className='aboutText'>
-            <Fade left>
+            <Fade left delay={300}  duration={700}>
               <h1>About Me</h1>
               <VisibilitySensor offset={{top:100}} scrollCheck={true} onChange={() => setIsVisible(!isVisible)}>
-                <p>I am a Sophomore Computer Engineering student at York College of Pennsylvania. Throughout college, I have developed skills in computer programming languages such as Java and C. I have also developed in circuit design, circuit analysis, and digital circuits, through coursework, breadboarding, labs, and projects.</p>
+                <p>I am a Sophomore Computer Engineering student at York College of Pennsylvania. Throughout college, I have developed skills in computer programming languages such as Java and C. I have also developed skills in circuit design, circuit analysis, and digital circuits, through coursework, breadboarding, labs, and projects.</p>
               </VisibilitySensor>
               <p></p>
               <p>I am excited to learn more about the industry and get started working in a software engineering position this summer at Becton Dickinson. Be sure to check out my projects section to learn more about the projects that I have completed!</p>
             </Fade>
           </div>
           <div className='aboutPicture'>
-            <Fade right><img src={headshotSmall} id='headshot' /></Fade>
+            <Fade right delay={1000} duration={700}><img src={headshotSmall} id='headshot' /></Fade>
           </div>
         </div>
 

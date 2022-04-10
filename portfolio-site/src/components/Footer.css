@@ -55,6 +55,14 @@
     margin-left:-15px;
 }
 
+.footerLink{
+    transition: 0.5s;
+}
+.footerLink:hover{
+    text-shadow: 0 3px rgba(0, 0, 0, 0.7), 0 0 10px rgba(0, 0, 0, 0.7), 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+
 @media screen and (max-width: 650px){
     .footerContainer{
         text-align: center;

@@ -26,7 +26,8 @@ const Resume = () => {
         <br /><br />
       </div>
 
-      <div className='workExperience'>
+      <div id='experience' className='workExperience'>
+        <br /><br />
         <Fade top duration={1000}><h1 className='sectionHeader'>Work Experience</h1></Fade>
         <div className='resumeContentFlexbox'>
           <Fade right delay={500} duration={1000}><Item title='Software Engineering Co-op' description='Becton Dickinson - Starting May 2022' className='workExpItem'></Item></Fade>
