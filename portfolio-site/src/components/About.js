@@ -26,7 +26,7 @@ const About = () => {
             </Fade>
           </div>
           <div className='aboutPicture'>
-            <Fade right delay={1000} duration={700}><img src={headshotSmall} id='headshot' /></Fade>
+            <Fade right delay={1000} duration={700}><img src={headshotSmall} id='headshot' alt='Headshot' /></Fade>
           </div>
         </div>
 

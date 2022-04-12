@@ -30,7 +30,7 @@ const Projects = () => {
               {/* Project Cards */}
               <div className='cardFlexbox'>
                 <Fade right delay={1500} duration={800}>
-                  <Card title='Automatic Light' image={ece100proj} className='cardItem' flippedContent={
+                  <Card title='Automatic Light' image={ece100proj} alt='Automatic Reading Night Light Final Prototype' className='cardItem' flippedContent={
                     <>
                       <p>My partner and I were tasked with designing a circuit and building a product that would turn on a reading light if the light level was low enough.</p>
                       <p>The circuit that we designed used the concept of voltage division and a transistor to turn on in low light instead of turning off in low light.</p>
@@ -41,9 +41,9 @@ const Projects = () => {
                   </Card>
                 </Fade>
                 <Fade right delay={1600} duration={800}>
-                  <Card title='MIDI Synth' image={ycpHacksProj} className='cardItem' flippedContent={
+                  <Card title='MIDI Synth' image={ycpHacksProj} alt='MIDI Synth Final Testing' className='cardItem' flippedContent={
                     <>
-                      <span className='midiVideo'><iframe src={video} loading='lazy' width='265' /></span>
+                      <span className='midiVideo'><iframe src={video} loading='lazy' width='265' title='MIDI Synth in Action'/></span>
                       <p>A 4 channel synthesizer driven by stepper motors with an audio visualizer. The entire device was made in 36 hours on a team of 4 at YCP Hacks.</p>
                       <p>It uses stepper motors to produce different pitches and plays a live MIDI input signal. This project won the Best Hardware Hack.</p>
                     </>
@@ -53,7 +53,7 @@ const Projects = () => {
                   </Card>
                 </Fade>
                 <Fade delay={1700} duration={800}>
-                  <Card title='Water Propelled Car' image={epadsImage} className='cardItem' flippedContent={
+                  <Card title='Water Propelled Car' image={epadsImage} alt='Water Propelled Car Being Tested' className='cardItem' flippedContent={
                     <p>Water stored at a height of 1.0m is used to propel a toy car. My partner and I designed, prototyped, tested, built, and presented our device.
                       <br/>The project was also a competition between teams, and our grades were based partially upon the distance which our car traveled compared to that of the other teams.
                       <br/>Our car went around 20m, which beat the other teams by quite a lot resulting in an A on the project.</p>
@@ -72,7 +72,7 @@ const Projects = () => {
                 <Fade delay={1000} duration={1000}>
                   <Block className='softwareProjectBlock' icon='fa fa-line-chart fa-5x' title='PaperTrader'>
                     <p>Stock brokerage and trading simulator using React.js and Firebase</p>
-                    <a href='https://github.com/mobrien13/paper-trader' target='_blank'>
+                    <a href='https://github.com/mobrien13/paper-trader' target='_blank' rel='noreferrer'>
                       <Button className='lightButton'>Source Code</Button>
                     </a>
                   </Block>
@@ -80,7 +80,7 @@ const Projects = () => {
                 <Fade delay={1000} duration={1000}>
                   <Block className='softwareProjectBlock' icon='fa fa-user-circle-o fa-5x' title='Portfolio Site'>
                     <p>Personal website to show off development skills using React.js</p>
-                    <a href='https://github.com/Mitchell-Conrad-20/portfolio-site ' target='_blank'>
+                    <a href='https://github.com/Mitchell-Conrad-20/portfolio-site ' target='_blank' rel='noreferrer'>
                       <Button className='lightButton'>Source Code</Button>
                     </a>
                   </Block>

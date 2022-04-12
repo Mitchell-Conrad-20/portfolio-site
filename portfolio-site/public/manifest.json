@@ -3,13 +3,28 @@
   "name": "Mitchell Conrad - Computer Engineering Portfolio",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
+      "src": "/images/favicon.ico",
       "type": "image/x-icon"
+    },
+    {
+      "src": "/images/websiteLogo1024x1024.png",
+      "type": "image/png",
+      "sizes": "1024x1024"
+    },
+    {
+      "src": "/images/websiteLogo1024x1024.png",
+      "type": "image/png",
+      "sizes": "1024x1024",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/images/apple-icon-180x180.png",
+      "type": "image/png",
+      "sizes": "180x180"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#0039cb",
   "background_color": "#ffffff"
 }

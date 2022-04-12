@@ -5,7 +5,7 @@ const Block = (props) => {
     return (
         <div className='block'>
             <div className='blockI'>
-                <i className={props.icon} aria-hidden="true"></i>
+                <i className={props.icon} aria-hidden={true}></i>
             </div>
             <div className='blockText'>
                 <h2>{props.title}</h2>

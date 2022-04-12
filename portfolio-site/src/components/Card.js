@@ -16,7 +16,7 @@ const Card = (props) => {
                         <Flip left duration={1000}>
                             <Fade duration={500}>
                                 <div text className='overflow'>
-                                    <img src={props.image} className='cardImage' />
+                                    <img src={props.image} className='cardImage' alt={props.alt} />
                                 </div>
                                 <h2>{props.title}</h2>
                                 {props.children}

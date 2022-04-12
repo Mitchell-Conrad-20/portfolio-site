@@ -32,7 +32,7 @@ const Hero = () => {
 
                 <div className='heroDownArrow'>
                     <Link to='about' smooth={true} ignoreCancelEvents duration={500}>
-                        <i id='heroDownArrow' class="fa fa-angle-double-down fa-5x" aria-hidden="true"></i>
+                        <i id='heroDownArrow' className="fa fa-angle-double-down fa-5x" aria-hidden="true"></i>
                     </Link>
                 </div>
             </div>
