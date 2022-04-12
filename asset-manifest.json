@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.47a0d6ac.css",
-    "main.js": "/static/js/main.648bbea2.js",
+    "main.css": "/static/css/main.41bf1e93.css",
+    "main.js": "/static/js/main.32ea0470.js",
     "static/media/videoCompressed.mp4": "/static/media/videoCompressed.79e401e6988defcfb476.mp4",
     "static/media/midiSynth.mp4": "/static/media/midiSynth.ed82568128ddfa812975.mp4",
     "static/media/epadsProj.webp": "/static/media/epadsProj.39c304340b3b6847b8bd.webp",
@@ -11,11 +11,11 @@
     "static/media/ycpHacks.webp": "/static/media/ycpHacks.2dbfa79261a1658204ab.webp",
     "static/media/Headshot2021Fall-small.webp": "/static/media/Headshot2021Fall-small.5c818344ddd8f1835c7b.webp",
     "index.html": "/index.html",
-    "main.47a0d6ac.css.map": "/static/css/main.47a0d6ac.css.map",
-    "main.648bbea2.js.map": "/static/js/main.648bbea2.js.map"
+    "main.41bf1e93.css.map": "/static/css/main.41bf1e93.css.map",
+    "main.32ea0470.js.map": "/static/js/main.32ea0470.js.map"
   },
   "entrypoints": [
-    "static/css/main.47a0d6ac.css",
-    "static/js/main.648bbea2.js"
+    "static/css/main.41bf1e93.css",
+    "static/js/main.32ea0470.js"
   ]
 }
