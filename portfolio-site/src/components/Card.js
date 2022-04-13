@@ -1,7 +1,7 @@
 import React from 'react';
 import './Card.css';
 import { useState } from 'react';
-import { Flip, Fade } from 'react-reveal';
+import { Flip } from 'react-reveal';
 
 const Card = (props) => {
     const [flip, setFlip] = useState(false);
