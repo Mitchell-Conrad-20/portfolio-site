@@ -26,8 +26,8 @@ const Footer = () => {
         <div className='footerRight'>
           <h2>Contact Info</h2>
           <ul className='footerUl'>
-            <li>Email: mconrad4@ycp.edu</li>
-            <li>Phone: 484-502-9014</li>
+            <li>Email: <a href='mailto:mconrad4@ycp.edu' className='footerLink'>mconrad4@ycp.edu</a></li>
+            <li>Phone: <a href='tel:4845029014' className='footerLink'>484-502-9014</a></li>
           </ul>
         </div>
       </div>
