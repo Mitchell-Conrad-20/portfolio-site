@@ -41,7 +41,7 @@ const Projects = () => {
                   </Card>
                 </Fade>
                 <Fade right delay={1600} duration={800}>
-                  <Card title='MIDI Synth' image={ycpHacksProj} alt='MIDI Synth Final Testing' className='cardItem' flippedContent={
+                  <Card title='MIDI Synth' image={ycpHacksProj} alt='MIDI Synth Final Testing' className='cardItem' small={true} flippedContent={
                     <>
                       <span className='midiVideo'><iframe src={video} loading='lazy' width='265' title='MIDI Synth in Action'/></span>
                       <p>A 4 channel synthesizer driven by stepper motors with an audio visualizer. The entire device was made in 36 hours on a team of 4 at YCP Hacks.</p>

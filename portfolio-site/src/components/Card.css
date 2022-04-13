@@ -7,7 +7,6 @@
     padding-bottom: 10px;
     padding-top:0px;
     transition:0.5s;
-    /* border:1px solid black; */
     margin-bottom: 20px;
     height: 525px;
 }
@@ -17,7 +16,6 @@
 }
 .cardImage{
     width:300px;
-    /* border-radius: 5px; */
     transform: scale(1);
     transition-duration: 0.5s;
 }
@@ -36,9 +34,13 @@
 @media screen and (max-width: 600px) {
     .cardContainer{
         width: 80vw;
-        height: fit-content;
+        height: 650px;
+    }
+    .cardContainerSmall{
+        width: 80vw;
+        height: 525px;
     }
     .cardImage{
-        width:80vw;
+        width: 80vw;
     }
 }

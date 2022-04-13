@@ -8,40 +8,37 @@ const Card = (props) => {
 
     return (
         <>
-            <div className='cardContainer' div onClick={() => setFlip(!flip)}>
 
-                {!flip &&
+            {!flip &&
 
-                    <>
-                        <Flip left duration={1000}>
-                            <Fade duration={500}>
-                                <div text className='overflow'>
-                                    <img src={props.image} className='cardImage' alt={props.alt} />
-                                </div>
-                                <h2>{props.title}</h2>
-                                {props.children}
-                            </Fade>
-                        </Flip>
+                <>
+                    <Flip left duration={800}>
+                        <div className={props.small ? 'cardContainer cardSmall' : 'cardContainer'} div onClick={() => setFlip(!flip)}>
+                            <div text className='overflow'>
+                                <img src={props.image} className='cardImage' alt={props.alt} />
+                            </div>
+                            <h2>{props.title}</h2>
+                            {props.children}
+                        </div>
+                    </Flip>
 
-                    </>
+                </>
 
-                }
+            }
 
-                {flip &&
+            {flip &&
 
-                    <>
-                        <Flip right duration={1000}>
-                            <Fade duration={500}>
-                                <h2>{props.title}</h2>
-                                { props.flippedContent }
-                            </Fade>
-                        </Flip>
-                    </>
+                <>
+                    <Flip right duration={800}>
+                        <div className={props.small ? 'cardContainer cardSmall' : 'cardContainer'} div onClick={() => setFlip(!flip)}>
+                            <h2>{props.title}</h2>
+                            {props.flippedContent}
+                        </div>
+                    </Flip>
+                </>
 
-                }
+            }
 
-
-            </div>
         </>
     )
 }
