@@ -32,7 +32,7 @@ const Home = () => {
 
         <div id='top' className='background'>
           <div className='videoOverflow'>
-            <video className='videoBackground' type="video/mp4" poster={thumbnail} src={video} preload='auto' playsInline loop={true} autoPlay muted no-='true' />
+            <video className='videoBackground' type="video/mp4" poster={thumbnail} src={video} preload='auto' playsInline loop={true} autoPlay muted/>
           </div>
           <div className='overVideo'>
             <Navbar scrollNav={scroll}></Navbar>
@@ -41,23 +41,13 @@ const Home = () => {
         </div>
 
 
-
-
-
         <About></About>
         <Projects></Projects>
         <Resume></Resume>
         <Footer></Footer>
 
       </div>
-
-
-      {/*<div className='content'>
-                <h1>testing</h1>
-                <Button onClick={() => modalRef.current.open()}>testing</Button>
-            </div>
-
-            <Modal ref={modalRef}><h1 id='modalText'>Contact</h1></Modal>*/}
+      
     </>
   )
 }

@@ -14,9 +14,9 @@ const Hero = () => {
         <>
             <div className='heroBackground'>
                 <div className='heroContainer'>
-                    <Zoom top duration={1000} delay={1300}>
+                    <Zoom top duration={1000} delay={600}>
                         <div className='heroText'>
-                            <Bounce delay={900}><h1 id='nameHeader'>Mitchell Conrad</h1></Bounce>
+                            <Bounce delay={400}><h1 id='nameHeader'>Mitchell Conrad</h1></Bounce>
                             <p>Computer Engineering Student - Graduating August 2024</p>
                             <Button onClick={() => modalRef.current.open()}>Contact</Button>
                             <br /><br />
