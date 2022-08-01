@@ -12,9 +12,9 @@ const About = () => {
           <div className='aboutText'>
             <Fade left delay={300} duration={700}>
               <h1>About Me</h1>
-              <p>I am a Sophomore Computer Engineering student at York College of Pennsylvania. Throughout college, I have developed skills in computer programming languages such as Java and C. I have also developed skills in circuit design, circuit analysis, and digital circuits, through coursework, breadboarding, labs, and projects.</p>
+              <p>I am a Junior Computer Engineering student at York College of Pennsylvania. Throughout college, I have developed skills in computer programming languages such as Java and C. I have also developed skills in circuit design, circuit analysis, and digital circuits through a variety of coursework including labs and projects.</p>
               <p></p>
-              <p>I am excited to learn more about the industry and get started working in a software engineering position this summer at Becton Dickinson. Be sure to check out my projects section to learn more about the projects that I have completed!</p>
+              <p>It was exciting to get starting working in the industry as a software engineering intern this summer at Becton Dickinson. I am thrilled to continue to learn more about the industry and am currently pursuing a co-op for the spring of 2023. Be sure to check out my projects section to learn more about the projects that I have completed!</p>
             </Fade>
           </div>
           <div className='aboutPicture'>

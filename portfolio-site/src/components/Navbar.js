@@ -27,7 +27,7 @@ const Navbar = (props) => {
                             {/* </NavLink> */}
                             <li className='nav-item'><Link to='about' spy={true} smooth={true} ignoreCancelEvents isDynamic duration={500}><Button scrollButton={props.scrollNav}>  About  </Button></Link></li>
                             <li className='nav-item'><Link to="projects" spy={true} smooth={true} ignoreCancelEvents isDynamic duration={500}><Button scrollButton={props.scrollNav}>  Projects  </Button></Link></li>
-                            <li className='nav-item'><Link to="resume" spy={true} smooth={true} ignoreCancelEvents isDynamic duration={500}><Button scrollButton={props.scrollNav}>  Resume  </Button></Link></li>
+                            <li className='nav-item'><Link to="resume" spy={true} smooth={true} ignoreCancelEvents isDynamic duration={500}><Button scrollButton={props.scrollNav}>  Skills  </Button></Link></li>
                             <li className='nav-item'><Link to="experience" spy={true} smooth={true} ignoreCancelEvents isDynamic duration={500}><Button scrollButton={props.scrollNav}>  Experience  </Button></Link></li>
                             <li id='contact' className='nav-item'><Button onClick={() => modalRef.current.open()}>  Contact  </Button></li>
                         </ul>
@@ -70,7 +70,7 @@ const Navbar = (props) => {
                                         <ul>
                                             <li><Link to='about' smooth={true} ignoreCancelEvents><Button className='mobileNavButton' onClick={() => setOpen(false)}>  About  </Button></Link></li>
                                             <li><Link to='projects' smooth={true} ignoreCancelEvents><Button className='mobileNavButton' onClick={() => setOpen(false)}>  Projects  </Button></Link></li>
-                                            <li><Link to='resume' smooth={true} ignoreCancelEvents><Button className='mobileNavButton' onClick={() => setOpen(false)}>  Resume  </Button></Link></li>
+                                            <li><Link to='resume' smooth={true} ignoreCancelEvents><Button className='mobileNavButton' onClick={() => setOpen(false)}>  Skills  </Button></Link></li>
                                             <li><Link to='experience' smooth={true} ignoreCancelEvents><Button className='mobileNavButton' onClick={() => setOpen(false)}>  Experience  </Button></Link></li>
                                             <li><Button className='mobileNavButton' onClick={() => modalRef.current.open()}>  Contact  </Button></li>
                                         </ul>

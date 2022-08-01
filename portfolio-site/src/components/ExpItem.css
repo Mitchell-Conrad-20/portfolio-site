@@ -1,0 +1,36 @@
+.experienceFlex{
+    display: flex;
+    justify-content: center;
+}
+
+.experienceSection{
+    text-align: left;
+    width: 65%;
+}
+
+.experienceTitle{
+    display: flex;
+    justify-content: space-between;
+}
+
+.experienceLine{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-bottom: 2px solid black;
+}
+
+.experienceContent p{
+    line-height: 30px;
+}
+
+@media screen and (max-width: 1300px) {
+    .experienceSection{
+        width: 80%
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .experienceSection{
+        width: 90%
+    }
+}

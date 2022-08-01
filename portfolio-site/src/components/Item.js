@@ -8,6 +8,8 @@ const Item = (props) => {
                 !props.clickable ? 'item ' + props.className : 'item itemClickable ' + props.className
             }>
                 <h2>{props.title}</h2>
+                <h4>{props.company}</h4>
+                <p>{props.date}</p>
                 <p>{props.description}</p>
             </div>
         </>
