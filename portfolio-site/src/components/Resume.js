@@ -16,7 +16,7 @@ const Resume = () => {
           <Fade right delay={500} duration={1000}><Item title='Java and OOP' description='Learned Object Orient Programming in Java during CS201 and earned a 99% in the course'></Item></Fade>
           <Fade right delay={500} duration={1000}><Item title='C#' description='Demonstrated proficiency in writing C# code in a large and heavily abstracted codebase while interning at BD'></Item></Fade>
           <Fade right delay={1000} duration={1000}><Item title='C/C++' description='Learned C in CS101 through projects and labs. Applied knowledge of C and C++ in other courses and projects'></Item></Fade>
-          <Fade right delay={500} duration={1000}><Item title='ReactJS' description='Experienced using React.js functional components and hooks for elegant and responsive web pages'></Item></Fade>
+          <Fade right delay={500} duration={1000}><Item title='ReactJS' description='Experienced using ReactJS functional components and hooks to create elegant and responsive web pages'></Item></Fade>
           <Fade right delay={1000} duration={1000}><Item title='HTML/CSS' description='Developed experience with HTML and CSS through 12 years of learning and practice on personal projects'></Item></Fade>
           <Fade right delay={500} duration={1000}><Item title='Circuit Analysis' description='Honed both digital and analog circuit analysis skills through a series of electrical engineering courses'></Item></Fade>
         </div>
